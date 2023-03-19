@@ -243,7 +243,7 @@
 }
 
 #down-navbar{
-
+    border-bottom: 1px solid #ebebeb;
     .left-header{
         width: 297px;
         height: 54px;
@@ -260,12 +260,14 @@
             display: block !important;
             color: white !important;
             font-size: 22px !important;
+            cursor: pointer;
         }
         &:hover .browse a{
             color: white !important;
         }
         &:hover .angle-down .fa-angle-down{
             color: white;
+            cursor: pointer;
         }
 
         .category{
@@ -309,15 +311,25 @@
                     width: 100%;
                     margin: 0;
                      padding: 0;
+                     .first{
+                        color: #666;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 1.5;
+                        border: 2px solid #ebebeb;
+                        border-top: none;
+                        padding: 0px 18px 6px 18px;
+                        width: 100%;
+                        list-style-type: none;
+                     }
                     li{
                         color: #666;
                         font-weight: 300;
-                        font-size: 1.4rem;
+                        font-size: 20px;
                         line-height: 1.5;
-                        letter-spacing: -.01em;
-                        border: 0.1rem solid #ebebeb;
+                        border: 2px solid #ebebeb;
                         border-top: none;
-                        padding: 0.3rem 1.2rem;
+                        padding: 6px 18px;
                         width: 100%;
                         list-style-type: none;
                         a{
@@ -331,6 +343,32 @@
             }
         }
 
+        .center-header{
+           
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 10px;
+            ul{
+                display: flex;
+               width: 100%;
+                li{
+                    padding-right: 30px;
+                    padding-top: 20px;
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        font-weight: 500;
+                        color: #393339;
+                        &:hover{
+                            border-bottom: 1px solid #fcb941;
+                            transition: all 0.5 ease;
+                        }
+                    }
+                }
+            }
+        }
     
 }
 
