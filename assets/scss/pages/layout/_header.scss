@@ -242,3 +242,95 @@
     }
 }
 
+#down-navbar{
+
+    .left-header{
+        width: 297px;
+        height: 54px;
+        &:hover{
+            background-color: #fcb941;
+        }
+        &:hover .side-bar{
+            display: block;
+        }
+        &:hover .show{
+            display: none;
+        }
+        &:hover .hide{
+            display: block !important;
+            color: white !important;
+            font-size: 22px !important;
+        }
+        &:hover .browse a{
+            color: white !important;
+        }
+        &:hover .angle-down .fa-angle-down{
+            color: white;
+        }
+
+        .category{
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            
+          
+            .icon{
+                .hide{
+                    display: none;
+                }
+                i{
+                    font-size: 17px;
+                }
+            }
+            .angle-down{
+                margin-left: 20px;
+                
+                i{
+                    color: #757db7;
+                }
+                
+            }
+            .browse{
+                a{
+                    text-decoration: none;
+                    color: #333333;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        
+         
+            .side-bar{
+                width: 100%;
+                border: none;
+                display: none;
+                ul{
+                    width: 100%;
+                    margin: 0;
+                     padding: 0;
+                    li{
+                        color: #666;
+                        font-weight: 300;
+                        font-size: 1.4rem;
+                        line-height: 1.5;
+                        letter-spacing: -.01em;
+                        border: 0.1rem solid #ebebeb;
+                        border-top: none;
+                        padding: 0.3rem 1.2rem;
+                        width: 100%;
+                        list-style-type: none;
+                        a{
+                            text-decoration: none;
+                            color: #666;
+                            font-weight: 300;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+    
+}
+
