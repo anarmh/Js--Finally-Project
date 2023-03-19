@@ -64,4 +64,53 @@
 }
 #up-navbar .up .up-nav .right ul li .dropdown .dropdown-menu .language {
   width: 100%;
+}
+#up-navbar .down {
+  margin-top: 20px;
+}
+#up-navbar .down .down-nav {
+  display: flex;
+  justify-content: space-between;
+}
+#up-navbar .down .down-nav .img a {
+  text-decoration: none;
+}
+#up-navbar .down .down-nav .search {
+  width: 570px;
+  height: 46px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+#up-navbar .down .down-nav .search div {
+  margin-left: 20px;
+}
+#up-navbar .down .down-nav .search .icon i {
+  font-size: 20px;
+  color: #9e9e9e;
+  rotate: 90deg;
+  cursor: pointer;
+}
+#up-navbar .down .down-nav .search .icon i:hover {
+  color: #fcb941;
+}
+#up-navbar .down .down-nav .search .input {
+  width: 87%;
+  border: none !important;
+}
+#up-navbar .down .down-nav .search .input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#up-navbar .down .down-nav .search .input input:focus {
+  outline: none !important;
+}
+#up-navbar .down .down-nav .icons {
+  display: flex;
+}
+#up-navbar .down .down-nav .icons .icon i {
+  color: white;
+  font-size: 20px;
 }/*# sourceMappingURL=home.css.map */
