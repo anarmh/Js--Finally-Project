@@ -54,16 +54,24 @@
 #up-navbar .up .up-nav .right ul li a i {
   padding-left: 10px;
 }
-#up-navbar .up .up-nav .right ul li .dropdown:hover .dropdown-menu {
-  display: block;
-  width: 10px;
+#up-navbar .up .up-nav .right ul li .dropdown {
+  position: relative;
+  display: inline-block;
 }
-#up-navbar .up .up-nav .right ul li .dropdown .dropdown-menu {
+#up-navbar .up .up-nav .right ul li .dropdown:hover .dropdown-content {
+  display: block;
+}
+#up-navbar .up .up-nav .right ul li .dropdown .dropdown-content {
   display: none;
   background-color: white;
+  position: absolute;
+  z-index: 1;
+  width: 60px;
 }
-#up-navbar .up .up-nav .right ul li .dropdown .dropdown-menu .language {
-  width: 100%;
+#up-navbar .up .up-nav .right ul li .dropdown .dropdown-content .dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 #up-navbar .down {
   margin-top: 20px;
@@ -110,7 +118,53 @@
 #up-navbar .down .down-nav .icons {
   display: flex;
 }
-#up-navbar .down .down-nav .icons .icon i {
+#up-navbar .down .down-nav .icons .icon-text {
+  padding-right: 20px;
+  position: relative;
+}
+#up-navbar .down .down-nav .icons .icon-text p {
   color: white;
-  font-size: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+#up-navbar .down .down-nav .icons .icon-text .icon {
+  display: flex;
+  justify-content: center;
+}
+#up-navbar .down .down-nav .icons .icon-text .icon i {
+  color: white;
+  font-size: 22px;
+}
+#up-navbar .down .down-nav .icons .icon-text .icon i:hover {
+  color: #fcb941;
+}
+#up-navbar .down .down-nav .icons .icon-text .icon .wislist-sup {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fcb941;
+  position: absolute;
+  right: 40%;
+  top: -5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#up-navbar .down .down-nav .icons .icon-text .icon .wislist-sup span {
+  font-size: 10px;
+}
+#up-navbar .down .down-nav .icons .icon-text .icon .cart-sup {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fcb941;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -5%;
+  right: 30%;
+}
+#up-navbar .down .down-nav .icons .icon-text .icon .cart-sup span {
+  font-size: 10px;
 }/*# sourceMappingURL=home.css.map */

@@ -102,17 +102,24 @@
                        
 
                         .dropdown{
-
-                            &:hover .dropdown-menu{
+                            position: relative;
+                            display: inline-block;
+                            &:hover .dropdown-content{
                                 display: block;
-                                width: 10px;
+                               
                             }
-                            .dropdown-menu{
+                            .dropdown-content{
                                 display: none;
                                 background-color: white;
-                                
-                                .language{
-                                    width: 100%;
+                                position: absolute;
+                                z-index: 1;
+                                width: 60px;
+                                .dropdown-content a{
+                                    display: block;
+                                    
+                                    text-decoration: none;
+                                    color: black;
+                                   
                                 }
                             }
                         }
@@ -171,12 +178,64 @@
 
             .icons{
                 display: flex;
-                .icon{
+                .icon-text{
+                    padding-right: 20px;
+                    position: relative;
 
-                    i{
+                    p{
                         color: white;
-                        font-size: 20px;
+                        font-size: 12px;
+                        text-align: center;
                     }
+                    .icon{
+                        display: flex;
+                        justify-content: center;
+                      
+                        i{
+                            color: white;
+                            font-size: 22px;
+                            &:hover{
+                                color: #fcb941;
+                            }
+                        }
+                        .wislist-sup{
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 100%;
+                            background-color: #fcb941;
+                            position: absolute;
+                            right: 40%;
+                            top: -5%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            span{
+                                font-size: 10px;
+                            }
+                        }
+
+                        .cart-sup{
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 100%;
+                            background-color: #fcb941;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: -5%;
+                            right: 30%;
+                            span{
+                                font-size: 10px;
+                            }
+                        }
+                     
+                    }
+                 
+                   
+                  
+
+
                 }
             }
         }
