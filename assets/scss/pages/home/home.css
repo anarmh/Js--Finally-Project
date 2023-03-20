@@ -15,6 +15,14 @@
   #up-navbar .right .hide {
     display: none !important;
   }
+  #up-navbar .down .search {
+    display: none !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  #down-navbar {
+    display: none !important;
+  }
 }
 #up-navbar {
   background-color: #333333;
@@ -181,6 +189,7 @@
 }
 #down-navbar .left-header:hover .side-bar {
   display: block;
+  z-index: 5;
 }
 #down-navbar .left-header:hover .show {
   display: none;
@@ -278,8 +287,81 @@
   text-decoration: none;
   font-weight: 500;
   color: #393339;
+  position: relative;
+}
+#down-navbar .center-header ul li a .line {
+  width: 120%;
+  height: 1px;
+  background-color: #fcb941;
+  position: absolute;
+  bottom: -70%;
 }
 #down-navbar .center-header ul li a:hover {
-  border-bottom: 1px solid #fcb941;
-  transition: all 0.5 ease;
+  color: #fcb941;
+}
+#down-navbar .center-header ul li .lines-bottom .lines {
+  height: 1px;
+  background-color: #fcb941;
+  position: absolute;
+  bottom: -70%;
+  display: none;
+  transition: width 3s !important;
+  transition-timing-function: ease !important;
+}
+#down-navbar .center-header ul li .lines-bottom:hover .lines {
+  display: block;
+  width: 120% !important;
+}
+#down-navbar .center-header ul li .home {
+  color: #fcb941;
+}
+#down-navbar .right-header {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+#down-navbar .right-header .text {
+  padding-top: 10px;
+}
+#down-navbar .right-header .text p {
+  color: #847977;
+}
+#down-navbar .right-header .text span {
+  font-weight: 500;
+  color: #333340;
+}
+
+#slide-banner {
+  margin-top: 20px;
+}
+#slide-banner .slider {
+  width: 780px;
+  height: 400px;
+  position: relative;
+}
+#slide-banner .slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+#slide-banner .slider i {
+  position: absolute;
+  color: #7c7c7e;
+  font-size: 20px;
+  z-index: 1;
+  cursor: pointer;
+  top: 190px;
+}
+#slide-banner .slider .left {
+  left: 25px;
+}
+#slide-banner .slider .right {
+  right: 20px;
+}
+#slide-banner .slider .active-img {
+  opacity: 1 !important;
 }/*# sourceMappingURL=home.css.map */
