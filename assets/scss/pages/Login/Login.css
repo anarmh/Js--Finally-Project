@@ -418,7 +418,31 @@
 }
 #nav ul li {
   list-style-type: none;
+  color: #999490;
 }
 #nav ul li a {
   text-decoration: none;
+  color: #999490;
+}
+#nav ul li i {
+  padding-right: 10px;
+}
+
+#login {
+  width: 1902px;
+  height: 900px;
+  background-image: url("../../../img/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login .form-box {
+  background-color: white;
+  max-width: 600px;
+}
+#login .form-box .tabs {
+  width: 600px;
 }/*# sourceMappingURL=Login.css.map */

@@ -10,9 +10,33 @@
         gap: 20px;
         li{
             list-style-type: none;
+            color: #999490;
             a{
                 text-decoration: none;
+                color: #999490;
             }
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+#login{
+    width: 1902px;
+    height: 900px;
+    background-image: url("../../../img/login-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-box{
+            
+            background-color: white;
+           max-width: 600px;
+        .tabs{
+           width: 600px;
         }
     }
 }
