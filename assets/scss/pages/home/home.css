@@ -334,6 +334,83 @@
   color: #333340;
 }
 
+#footer {
+  padding: 50px 0 20px 0;
+}
+#footer .about {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#footer .about img {
+  width: 105px;
+  height: 25px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#footer .about p {
+  margin-bottom: 15px;
+}
+#footer .about .call {
+  position: relative;
+  padding: 30px 10px 15px 50px;
+  border: 1px solid #ebebeb;
+  border-radius: 2px;
+  max-width: 270px;
+  line-height: 1.25;
+  color: #a388b4;
+}
+#footer .about .call i {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  color: #fcb941;
+  font-size: 30px;
+}
+#footer .about .call a {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+}
+#footer .about .call a:hover {
+  color: #fcb941;
+}
+#footer .title {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+#footer .title h4 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#footer .title ul {
+  padding: 0;
+}
+#footer .title ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+#footer .title ul li a {
+  text-decoration: none;
+  color: #333;
+}
+#footer .title ul li a:hover {
+  color: #fcb941;
+}
+#footer .footer {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #ebebeb;
+  padding-top: 30px;
+}
+#footer .footer .payments {
+  display: flex;
+  justify-content: space-between;
+}
+
 #slide-banner {
   margin-top: 20px;
 }
