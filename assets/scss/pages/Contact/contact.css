@@ -410,4 +410,56 @@
 #footer .footer .payments {
   display: flex;
   justify-content: space-between;
+}
+
+#nav ul {
+  display: flex;
+  padding-top: 10px;
+  gap: 20px;
+}
+#nav ul li {
+  list-style-type: none;
+  color: #999490;
+}
+#nav ul li a {
+  text-decoration: none;
+  color: #999490;
+}
+#nav ul li a:hover {
+  color: #fcb941;
+}
+#nav ul li i {
+  padding-right: 10px;
+}
+
+#page-header .bg-page {
+  min-height: 450px;
+  background-image: url("../../../img/contact-header-bg.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#page-header .bg-page h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff !important;
+  line-height: 35px;
+}
+#page-header .bg-page h1 span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#content .contact-info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#content .contact-info .title {
+  margin-bottom: 20px !important;
+}
+#content .contact-info p {
+  color: #777;
 }/*# sourceMappingURL=contact.css.map */

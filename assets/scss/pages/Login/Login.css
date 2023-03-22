@@ -425,6 +425,9 @@
   text-decoration: none;
   color: #999490;
 }
+#nav ul li a:hover {
+  color: #fcb941;
+}
 #nav ul li i {
   padding-right: 10px;
 }

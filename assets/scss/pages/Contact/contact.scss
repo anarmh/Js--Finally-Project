@@ -1,2 +1,68 @@
 @import "../layout/header";
 @import"../layout/footer";
+
+#nav{
+
+    ul{
+        display: flex;
+       padding-top: 10px;
+        gap: 20px;
+        li{
+            list-style-type: none;
+            color: #999490;
+            a{
+                text-decoration: none;
+                color: #999490;
+                &:hover{
+                    color: #fcb941;
+                }
+            }
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+#page-header{
+
+    .bg-page{
+        min-height: 450px;
+        background-image: url("../../../img/contact-header-bg.jpg");
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff!important;
+            line-height: 35px;
+            span{
+                display: block;
+                font-size: 15px;
+                font-weight: 400;
+               
+            }
+        }
+    }
+}
+
+#content{
+    .contact-info{
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+        .title{
+
+            margin-bottom: 20px !important;
+        }
+       
+        p{
+            color: #777;
+        }
+    }
+    
+   
+}
