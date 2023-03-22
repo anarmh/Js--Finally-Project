@@ -350,6 +350,7 @@
 }
 #footer .about p {
   margin-bottom: 15px;
+  color: #a388b4;
 }
 #footer .about .call {
   position: relative;
@@ -395,7 +396,7 @@
 }
 #footer .title ul li a {
   text-decoration: none;
-  color: #333;
+  color: #a388b4;
 }
 #footer .title ul li a:hover {
   color: #fcb941;
