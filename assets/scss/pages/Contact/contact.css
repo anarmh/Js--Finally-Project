@@ -412,6 +412,12 @@
   justify-content: space-between;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #nav ul {
   display: flex;
   padding-top: 10px;
@@ -457,9 +463,132 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-#content .contact-info .title {
+#content .contact-info p {
+  color: #666;
+  margin-top: 10px;
+}
+#content .contact-info .info .title {
   margin-bottom: 20px !important;
 }
-#content .contact-info p {
+#content .contact-info .info h3 {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#content .contact-info .info ul {
+  max-width: 300px;
+  padding-left: 0;
+  list-style: none;
+}
+#content .contact-info .info ul li span {
+  padding-left: 20px;
+}
+#content .contact-info .info ul li i {
+  color: #fcb941;
+  display: inline-block;
+}
+#content .contact-info .info ul li .text {
+  padding-left: 40px;
+}
+#content .contact-info .info ul li a {
+  text-decoration: none;
+  padding-left: 20px;
+  color: #666;
+}
+#content .quetions p {
+  color: #666;
+  margin-top: 10px;
+}
+#content .quetions form input {
+  background-color: #fafafa;
+  border: 1px solid #ebebeb !important;
+}
+#content .quetions form textarea {
+  background-color: #fafafa;
+  border: 1px solid #ebebeb !important;
+  min-height: 130px;
+}
+#content .quetions form button {
+  background-color: #fff;
+  border: 1px solid #fcb941;
+  padding: 8px 16px;
+}
+#content .quetions form button:hover {
+  background-color: #fcb941;
+}
+#content .quetions form button:hover span {
+  color: #fff !important;
+}
+#content .quetions form button:hover i {
+  color: #fff;
+}
+#content .quetions form button span {
+  text-transform: uppercase;
+  color: #fcb941;
+  font-size: 13px;
+}
+#content .quetions form button i {
+  color: #fcb941;
+  margin-left: 16px;
+  font-size: 12px;
+}
+#content hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#stores h2.title {
+  margin-bottom: 50px;
+}
+#stores .store-title {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: -4px;
+  color: #333;
+}
+#stores .address {
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 0;
   color: #777;
+}
+#stores .phone-number a {
+  color: #777;
+  text-decoration: none;
+}
+#stores .phone-number a:hover {
+  color: #fcb941;
+}
+#stores h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 17px;
+}
+#stores .date-time {
+  color: #777;
+  line-height: 10px;
+  margin-bottom: 20px;
+}
+#stores .map {
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+#stores .map:hover {
+  border-bottom: 1px solid #fcb941;
+}
+#stores .map span {
+  color: #fcb941;
+}
+#stores .map i {
+  color: #fcb941;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+#map img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=contact.css.map */
