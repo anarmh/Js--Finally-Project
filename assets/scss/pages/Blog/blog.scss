@@ -55,57 +55,146 @@
     }
 }
 
-
-.blog-entry{
-
-
-   
-    .body{
-
-        margin: 20px 0;
-        .author{
-
-            span{
-                color: #777;
-                
+#blog{
+    .blog-entry{
+        .img{
+          
+            img{
+                object-fit: cover;
+                 width: 100%;
+                 height: 100%;
             }
-            a{
-                color: #777;
-                text-decoration: none;
-                &:hover{
-                    color: #fcb941;
-                    border-bottom: 1px solid #fcb941;
+        }
+       
+   
+        .body{
+    
+            margin: 20px 0;
+            .author{
+    
+                span{
+                    color: #777;
+                    
+                }
+                a{
+                    color: #777;
+                    text-decoration: none;
+                    &:hover{
+                        color: #fcb941;
+                        border-bottom: 1px solid #fcb941;
+                    }
+                }
+                .vertical-line{
+                    margin-left: 10px;
+                    margin-right: 10px;
                 }
             }
-            .vertical-line{
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-        }
-
-        h2{
-           line-height: 1;
-            a{
-                text-decoration: none;
-                color: #333;
-                font-weight: 700;
-                letter-spacing: -1px;
-                font-size: 25px;
-            }
-        }
-
-        .life-style{
-            margin-bottom: 20px;
-            color: #777;
-            span{
-               
+    
+            h2{
+               line-height: 1;
+    
                 a{
                     text-decoration: none;
-                    color: #777;
-
+                    color: #333;
+                    font-weight: 700;
+                    letter-spacing: -1px;
+                    font-size: 25px;
+                    &:hover{
+                        color: #fcb941;
+                    }
                 }
             }
-            
+    
+            .life-style{
+                margin-bottom: 20px;
+                color: #777;
+                span{
+                   
+                    a{
+                        text-decoration: none;
+                        color: #777;
+                        &:hover{
+                            color: #fcb941;
+                            border-bottom:1px solid #fcb941;
+                        }
+    
+                    }
+                }
+                
+            }
+    
+            .content{
+                margin-bottom: 50px;
+                p{
+                    color: #777;
+                    line-height: 0.5;
+                }
+               
+                .link{
+                    margin-top: 20px;
+                    a{
+                        
+                        padding-top: 20px;
+                        text-decoration: none;
+                        color: #fcb941;
+                        
+                        &:hover{
+                            border-bottom:1px solid #fcb941;
+                        }
+                        &:hover i{
+                            opacity: 1 !important;
+                        }
+                        i{
+                            font-size: 12px;
+                            padding-left: 7px;
+                            opacity: 0 !important;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+
+    .sticky-content{
+
+        .search{
+
+            h3{
+                font-size: 20px;
+                color: #333;
+                font-weight: 400;
+            }
+
+            form{
+                width: 277px;
+                height: 40px;
+                border:1px solid #ebebeb;
+                position: relative;
+                input{
+                   padding-left: 20px;
+                   padding-top: 7px;
+                   outline: none;
+                    border: none;
+                   width: 90%;
+                    &::placeholder{
+                        font-size: 14px;
+                        color: #a5a5a5;
+                    }
+                }
+                button{
+                    outline: none;
+                    border: none;
+                    background-color: white;
+                    i{
+                        rotate: 90deg;
+                        color: #949494;
+                        &:hover{
+                            color: #fcb941;
+                        }
+                    }
+                }
+            }
         }
     }
 }

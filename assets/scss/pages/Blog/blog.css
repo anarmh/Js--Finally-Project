@@ -464,39 +464,116 @@
   font-size: 20px;
 }
 
-.blog-entry .body {
+#blog .blog-entry .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#blog .blog-entry .body {
   margin: 20px 0;
 }
-.blog-entry .body .author span {
+#blog .blog-entry .body .author span {
   color: #777;
 }
-.blog-entry .body .author a {
+#blog .blog-entry .body .author a {
   color: #777;
   text-decoration: none;
 }
-.blog-entry .body .author a:hover {
+#blog .blog-entry .body .author a:hover {
   color: #fcb941;
   border-bottom: 1px solid #fcb941;
 }
-.blog-entry .body .author .vertical-line {
+#blog .blog-entry .body .author .vertical-line {
   margin-left: 10px;
   margin-right: 10px;
 }
-.blog-entry .body h2 {
+#blog .blog-entry .body h2 {
   line-height: 1;
 }
-.blog-entry .body h2 a {
+#blog .blog-entry .body h2 a {
   text-decoration: none;
   color: #333;
   font-weight: 700;
   letter-spacing: -1px;
   font-size: 25px;
 }
-.blog-entry .body .life-style {
+#blog .blog-entry .body h2 a:hover {
+  color: #fcb941;
+}
+#blog .blog-entry .body .life-style {
   margin-bottom: 20px;
   color: #777;
 }
-.blog-entry .body .life-style span a {
+#blog .blog-entry .body .life-style span a {
   text-decoration: none;
   color: #777;
+}
+#blog .blog-entry .body .life-style span a:hover {
+  color: #fcb941;
+  border-bottom: 1px solid #fcb941;
+}
+#blog .blog-entry .body .content {
+  margin-bottom: 50px;
+}
+#blog .blog-entry .body .content p {
+  color: #777;
+  line-height: 0.5;
+}
+#blog .blog-entry .body .content .link {
+  margin-top: 20px;
+}
+#blog .blog-entry .body .content .link a {
+  padding-top: 20px;
+  text-decoration: none;
+  color: #fcb941;
+}
+#blog .blog-entry .body .content .link a:hover {
+  border-bottom: 1px solid #fcb941;
+}
+#blog .blog-entry .body .content .link a:hover i {
+  opacity: 1 !important;
+}
+#blog .blog-entry .body .content .link a i {
+  font-size: 12px;
+  padding-left: 7px;
+  opacity: 0 !important;
+}
+#blog .sticky-content .search h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 400;
+}
+#blog .sticky-content .search form {
+  width: 277px;
+  height: 40px;
+  border: 1px solid #ebebeb;
+  position: relative;
+}
+#blog .sticky-content .search form input {
+  padding-left: 20px;
+  padding-top: 7px;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+#blog .sticky-content .search form input::-moz-placeholder {
+  font-size: 14px;
+  color: #a5a5a5;
+}
+#blog .sticky-content .search form input::placeholder {
+  font-size: 14px;
+  color: #a5a5a5;
+}
+#blog .sticky-content .search form button {
+  outline: none;
+  border: none;
+  background-color: white;
+}
+#blog .sticky-content .search form button i {
+  rotate: 90deg;
+  color: #949494;
+}
+#blog .sticky-content .search form button i:hover {
+  color: #fcb941;
 }/*# sourceMappingURL=blog.css.map */
