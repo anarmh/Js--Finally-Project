@@ -1,6 +1,12 @@
 @import "../layout/header";
 @import "../layout/footer";
 
+@media(max-width: 991.91px){
+    .col-lg-3{
+        display: none;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -65,6 +71,44 @@
                  height: 100%;
             }
         }
+        .iframe{
+            position: relative;
+            .link{
+                display: inline-flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                background-color: #49535a;
+                justify-content: center;
+                align-items: center;
+               
+                a{
+                    width: 70%;
+                    height: 70%;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    &:hover{
+                        background-color: #fcb941;
+                     }
+                    &:hover i{
+                        color: #fff;
+                    }
+                   
+                    i{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        color: #fcb941;
+                        
+                    }
+                }
+            }
+        }
        
    
         .body{
@@ -127,7 +171,7 @@
                 margin-bottom: 50px;
                 p{
                     color: #777;
-                    line-height: 0.5;
+                    line-height: 1;
                 }
                
                 .link{
@@ -358,19 +402,49 @@
       
     }
     .tags{
-
+        margin-top: 30px;
+        
         h3{
-
+            color: #333;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
         }
 
         .tag-links{
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            
             a{
                 text-decoration: none;
                 display: block;
                 color: #777;
                  font-weight: 300;
                  background-color: #fafafa;
+                 border: 1px solid #ebebeb;
+                 line-height: 1.4;
+                 padding: 5px 10px;
+                 border-radius: 5px;
+                 margin-right: 10px;
+                 margin-bottom: 10px;
+                 &:hover{
+                    color: #fcb941;
+                 }
             }
+        }
+    }
+
+    .about-blog{
+        margin-top: 20px;
+        h3{
+            color: #333;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #777;
         }
     }
 }
