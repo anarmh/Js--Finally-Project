@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // border: 1px solid red;
 }
 
 // X-Small devices (portrait phones, less than 576px)
@@ -256,7 +257,10 @@
     border-bottom: 1px solid #ebebeb;
     .left-header{
         width: 297px;
-        height: 54px;
+        height: 100%;
+         position: relative;
+
+         
         &:hover{
             background-color: #fcb941;
         }
@@ -285,8 +289,7 @@
             display: flex;
             gap: 15px;
             padding: 20px;
-            
-          
+           
             .icon{
                 .hide{
                     display: none;
@@ -318,6 +321,10 @@
                 width: 100%;
                 border: none;
                 display: none;
+                position: absolute;
+                 z-index: 5;
+                background-color: white;
+               
                 ul{
                     width: 100%;
                     margin: 0;
@@ -355,33 +362,41 @@
         }
 
         .center-header{
-           
+           height: 100%;
             width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            line-height: 10px;
+            
+            // align-items: center;
+            
             ul{
                 display: flex;
                width: 100%;
+               height: 100%;
+                gap: 30px;
+               align-items: center;
                 li{
-                    padding-right: 30px;
-                    padding-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     list-style-type: none;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 75px;
+                    .line{
+                        width: 120%;
+                        height: 1px ;
+                        background-color: #fcb941;
+                         position: relative;
+                        top: 20px;
+                        
+                     }
                     
                     a{
                         text-decoration: none;
                         font-weight: 500;
                         color: #393339;
                         position: relative;
-                     .line{
-                        width: 120%;
-                        height: 1px ;
-                        background-color: #fcb941;
-                        position: absolute;
-                        bottom: -70%;
-                        
-                     }
+                    
                      
                       &:hover{
                         color: #fcb941;

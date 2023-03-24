@@ -1,2 +1,35 @@
 @import "../layout/header";
 @import "../layout/footer";
+
+
+@font-face{
+    font-family:myFont;
+    src: url("../../../fonts/GreatVibes-Regular.ttf");
+    
+}
+
+#nav{
+    border-bottom: 1px solid hsla(0,0%,92.2%,.55);;
+    ul{
+        display: flex;
+       padding-top: 10px;
+       padding-left: 0;
+        gap: 20px;
+        li{
+            list-style-type: none;
+            color: #999490;
+            a{
+                text-decoration: none;
+                color: #999490;
+                &:hover{
+                    color: #fcb941;
+                }
+            }
+            i{
+                padding-right: 10px;
+                font-size: 12px;
+              
+            }
+        }
+    }
+}

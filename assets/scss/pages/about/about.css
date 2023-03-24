@@ -182,7 +182,8 @@
 }
 #down-navbar .left-header {
   width: 297px;
-  height: 54px;
+  height: 100%;
+  position: relative;
 }
 #down-navbar .left-header:hover {
   background-color: #fcb941;
@@ -233,6 +234,9 @@
   width: 100%;
   border: none;
   display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: white;
 }
 #down-navbar .left-header .side-bar ul {
   width: 100%;
@@ -268,33 +272,38 @@
   font-size: 15px;
 }
 #down-navbar .center-header {
+  height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 10px;
 }
 #down-navbar .center-header ul {
   display: flex;
   width: 100%;
+  height: 100%;
+  gap: 30px;
+  align-items: center;
 }
 #down-navbar .center-header ul li {
-  padding-right: 30px;
-  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
+  flex-direction: column;
+  height: 100%;
+  width: 75px;
+}
+#down-navbar .center-header ul li .line {
+  width: 120%;
+  height: 1px;
+  background-color: #fcb941;
+  position: relative;
+  top: 20px;
 }
 #down-navbar .center-header ul li a {
   text-decoration: none;
   font-weight: 500;
   color: #393339;
   position: relative;
-}
-#down-navbar .center-header ul li a .line {
-  width: 120%;
-  height: 1px;
-  background-color: #fcb941;
-  position: absolute;
-  bottom: -70%;
 }
 #down-navbar .center-header ul li a:hover {
   color: #fcb941;
@@ -410,4 +419,33 @@
 #footer .footer .payments {
   display: flex;
   justify-content: space-between;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("../../../fonts/GreatVibes-Regular.ttf");
+}
+#nav {
+  border-bottom: 1px solid hsla(0, 0%, 92.2%, 0.55);
+}
+#nav ul {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 0;
+  gap: 20px;
+}
+#nav ul li {
+  list-style-type: none;
+  color: #999490;
+}
+#nav ul li a {
+  text-decoration: none;
+  color: #999490;
+}
+#nav ul li a:hover {
+  color: #fcb941;
+}
+#nav ul li i {
+  padding-right: 10px;
+  font-size: 12px;
 }/*# sourceMappingURL=about.css.map */
