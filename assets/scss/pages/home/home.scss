@@ -13,7 +13,174 @@
     }
    }
 
-   
+   .banners{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+    .banner{
+
+        background-image: url("../../../img/banner-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120px;
+        .content{
+            position: relative;
+            left: 20px;
+            top: 20px;
+          
+          h4{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 0.6;
+            a{
+                text-decoration: none;
+                color: #d7d2d2;
+                &:hover{
+                    color: #fcbb4b;
+                }
+            }
+          }
+          h3{
+            font-size: 20px;
+            line-height: 1;
+            a{
+                text-decoration: none;
+                color: #333;
+               &:hover{
+                color: #fcbb4b;
+               }
+            }
+          }
+          .button{
+            font-size: 15px;
+            text-decoration: none;
+            color: #fcbb4b;
+            padding: 1px 15px 1px 10px;
+            border-radius: 20px;
+            &:hover{
+                background-color: #fcbb4b;
+                color: white;
+            }
+
+            &:hover i{
+                color: white;
+            }
+          }
+         
+        }
+
+        
+    }
+
+
+    .banner2{
+
+        background-image: url("../../../img/banner-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120px;
+        .content{
+            position: relative;
+            left: 20px;
+            top: 20px;
+          
+          h4{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 0.6;
+            a{
+                text-decoration: none;
+                color: #d7d2d2;
+                &:hover{
+                    color: #fcbb4b;
+                }
+            }
+          }
+          h3{
+            font-size: 20px;
+            line-height: 1;
+            a{
+                text-decoration: none;
+                color: #333;
+               &:hover{
+                color: #fcbb4b;
+               }
+            }
+          }
+          .button{
+            font-size: 15px;
+            text-decoration: none;
+            color: #fcbb4b;
+            padding: 1px 15px 1px 10px;
+            border-radius: 20px;
+            &:hover{
+                background-color: #fcbb4b;
+                color: white;
+            }
+
+            &:hover i{
+                color: white;
+            }
+          }
+         
+        }
+    }
+
+    .banner3{
+
+        background-image: url("../../../img/banner-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120px;
+        .content{
+            position: relative;
+            left: 20px;
+            top: 20px;
+          
+          h4{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 0.6;
+            a{
+                text-decoration: none;
+                color: #d7d2d2;
+                &:hover{
+                    color: #fcbb4b;
+                }
+            }
+          }
+          h3{
+            font-size: 20px;
+            line-height: 1;
+            a{
+                text-decoration: none;
+                color: #333;
+               &:hover{
+                color: #fcbb4b;
+               }
+            }
+          }
+          .button{
+            font-size: 15px;
+            text-decoration: none;
+            color: #fcbb4b;
+            padding: 1px 15px 1px 10px;
+            border-radius: 20px;
+            &:hover{
+                background-color: #fcbb4b;
+                color: white;
+            }
+
+            &:hover i{
+                color: white;
+            }
+          }
+         
+        }
+    }
+   }
 
    
     

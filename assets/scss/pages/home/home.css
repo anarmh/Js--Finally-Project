@@ -465,4 +465,154 @@
 }
 #slide-banner .slider .icon {
   background-color: #777;
+}
+#slide-banner .banners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+#slide-banner .banners .banner {
+  background-image: url("../../../img/banner-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+#slide-banner .banners .banner .content {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+#slide-banner .banners .banner .content h4 {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 0.6;
+}
+#slide-banner .banners .banner .content h4 a {
+  text-decoration: none;
+  color: #d7d2d2;
+}
+#slide-banner .banners .banner .content h4 a:hover {
+  color: #fcbb4b;
+}
+#slide-banner .banners .banner .content h3 {
+  font-size: 20px;
+  line-height: 1;
+}
+#slide-banner .banners .banner .content h3 a {
+  text-decoration: none;
+  color: #333;
+}
+#slide-banner .banners .banner .content h3 a:hover {
+  color: #fcbb4b;
+}
+#slide-banner .banners .banner .content .button {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcbb4b;
+  padding: 1px 15px 1px 10px;
+  border-radius: 20px;
+}
+#slide-banner .banners .banner .content .button:hover {
+  background-color: #fcbb4b;
+  color: white;
+}
+#slide-banner .banners .banner .content .button:hover i {
+  color: white;
+}
+#slide-banner .banners .banner2 {
+  background-image: url("../../../img/banner-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+#slide-banner .banners .banner2 .content {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+#slide-banner .banners .banner2 .content h4 {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 0.6;
+}
+#slide-banner .banners .banner2 .content h4 a {
+  text-decoration: none;
+  color: #d7d2d2;
+}
+#slide-banner .banners .banner2 .content h4 a:hover {
+  color: #fcbb4b;
+}
+#slide-banner .banners .banner2 .content h3 {
+  font-size: 20px;
+  line-height: 1;
+}
+#slide-banner .banners .banner2 .content h3 a {
+  text-decoration: none;
+  color: #333;
+}
+#slide-banner .banners .banner2 .content h3 a:hover {
+  color: #fcbb4b;
+}
+#slide-banner .banners .banner2 .content .button {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcbb4b;
+  padding: 1px 15px 1px 10px;
+  border-radius: 20px;
+}
+#slide-banner .banners .banner2 .content .button:hover {
+  background-color: #fcbb4b;
+  color: white;
+}
+#slide-banner .banners .banner2 .content .button:hover i {
+  color: white;
+}
+#slide-banner .banners .banner3 {
+  background-image: url("../../../img/banner-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+#slide-banner .banners .banner3 .content {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+#slide-banner .banners .banner3 .content h4 {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 0.6;
+}
+#slide-banner .banners .banner3 .content h4 a {
+  text-decoration: none;
+  color: #d7d2d2;
+}
+#slide-banner .banners .banner3 .content h4 a:hover {
+  color: #fcbb4b;
+}
+#slide-banner .banners .banner3 .content h3 {
+  font-size: 20px;
+  line-height: 1;
+}
+#slide-banner .banners .banner3 .content h3 a {
+  text-decoration: none;
+  color: #333;
+}
+#slide-banner .banners .banner3 .content h3 a:hover {
+  color: #fcbb4b;
+}
+#slide-banner .banners .banner3 .content .button {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fcbb4b;
+  padding: 1px 15px 1px 10px;
+  border-radius: 20px;
+}
+#slide-banner .banners .banner3 .content .button:hover {
+  background-color: #fcbb4b;
+  color: white;
+}
+#slide-banner .banners .banner3 .content .button:hover i {
+  color: white;
 }/*# sourceMappingURL=home.css.map */
