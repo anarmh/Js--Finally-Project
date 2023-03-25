@@ -281,16 +281,50 @@
   width: 100%;
   height: 100%;
   gap: 30px;
-  align-items: center;
+}
+#down-navbar .center-header ul .pages:hover .list {
+  display: block !important;
+}
+#down-navbar .center-header ul .pages .list {
+  background-color: #fff;
+  position: absolute;
+  top: 62px;
+  z-index: 2;
+  display: none;
+  width: 210px !important;
+  left: 0;
+  right: 20px;
+  border: 1px solid #ebebeb;
+}
+#down-navbar .center-header ul .pages .list ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#down-navbar .center-header ul .pages .list ul li .link {
+  color: #666;
+}
+#down-navbar .center-header ul .pages .list ul li .link:hover {
+  color: #fcb941;
+}
+#down-navbar .center-header ul .pages .links {
+  position: absolute;
+  background-color: #fcb941;
 }
 #down-navbar .center-header ul li {
   display: flex;
-  align-items: center;
   justify-content: center;
   list-style-type: none;
   flex-direction: column;
   height: 100%;
   width: 75px;
+}
+#down-navbar .center-header ul li:hover .lines {
+  display: block;
+}
+#down-navbar .center-header ul li:hover a {
+  color: #fcb941;
 }
 #down-navbar .center-header ul li .line {
   width: 120%;
@@ -299,14 +333,19 @@
   position: relative;
   top: 20px;
 }
+#down-navbar .center-header ul li .lines {
+  width: 120%;
+  height: 1px;
+  background-color: #fcb941;
+  position: relative;
+  top: 20px;
+  display: none;
+}
 #down-navbar .center-header ul li a {
   text-decoration: none;
   font-weight: 500;
   color: #393339;
   position: relative;
-}
-#down-navbar .center-header ul li a:hover {
-  color: #fcb941;
 }
 #down-navbar .center-header ul li .lines-bottom .lines {
   height: 1px;
@@ -421,10 +460,12 @@
   justify-content: space-between;
 }
 
-@font-face {
-  font-family: myFont;
-  src: url("../../../fonts/GreatVibes-Regular.ttf");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 #nav {
   border-bottom: 1px solid hsla(0, 0%, 92.2%, 0.55);
 }
@@ -448,4 +489,30 @@
 #nav ul li i {
   padding-right: 10px;
   font-size: 12px;
+}
+
+#about-header .header {
+  background-image: url("../../../img/about-header-bg.jpg");
+  min-height: 450px;
+  position: relative;
+}
+#about-header .header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+#about-header .header h1 span {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+#content h2 {
+  font-size: 25px;
+}
+#content h2 p {
+  color: #778895;
+  font: 300;
 }/*# sourceMappingURL=about.css.map */

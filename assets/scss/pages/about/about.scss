@@ -2,10 +2,12 @@
 @import "../layout/footer";
 
 
-@font-face{
-    font-family:myFont;
-    src: url("../../../fonts/GreatVibes-Regular.ttf");
-    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
 }
 
 #nav{
@@ -32,4 +34,41 @@
             }
         }
     }
+}
+
+
+#about-header{
+
+    .header{
+        background-image: url("../../../img/about-header-bg.jpg");
+        min-height: 450px;
+        position: relative;
+
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            span{
+                display: block;
+                font-size: 15px;
+                text-align: center;
+            }
+            
+        }
+    }
+}
+
+#content{
+
+    h2{
+        font-size: 25px;
+
+        p{
+            color: #778895;
+            font: 300;
+        }
+    }
+
 }
