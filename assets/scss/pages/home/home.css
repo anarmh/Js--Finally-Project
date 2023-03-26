@@ -663,6 +663,9 @@
   background-color: #ef837b;
   top: 5%;
 }
+#tab-carousel .card .img .second-box {
+  background-color: #a6c76c;
+}
 #tab-carousel .card .img .top {
   background-color: #7dd2ea;
   top: 17%;
@@ -705,4 +708,29 @@
 #tab-carousel .card .wishlist i {
   display: block;
   cursor: pointer;
+}
+#tab-carousel .card .card-body a {
+  text-decoration: none;
+}
+#tab-carousel .card .card-body .card-title a {
+  color: #ceced3;
+}
+#tab-carousel .card .card-body .card-title a:hover {
+  color: #fcbb4b;
+}
+#tab-carousel .card .card-body .card-text a {
+  color: #333;
+}
+#tab-carousel .card .card-body .card-text a:hover {
+  color: #fcbb4b;
+}
+#tab-carousel .card .card-body .card-price span {
+  color: #fcbb4b;
+}
+#tab-carousel .card .card-body .card-rating i {
+  font-size: 10px;
+  color: #fcbb4b;
+}
+#tab-carousel .card .card-body .card-rating .last-star {
+  color: #cccccc;
 }/*# sourceMappingURL=home.css.map */

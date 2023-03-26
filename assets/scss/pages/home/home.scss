@@ -248,6 +248,11 @@
         top: 5%;
       }
 
+      .second-box{
+        background-color: #a6c76c;
+      }
+     
+
       .top{
         background-color: #7dd2ea;
         top: 17%;
@@ -296,7 +301,51 @@
       }
     }
 
+      .card-body{
+        a{
+          text-decoration: none;
+        }
 
+        .card-title{
+
+          a{
+           color: #ceced3;
+           &:hover{
+            color: #fcbb4b;
+           }
+          }
+
+        }
+
+
+        .card-text{
+
+          a{
+            color: #333;
+            &:hover{
+              color: #fcbb4b;
+            }
+          }
+        }
+
+        .card-price{
+          span{
+            color: #fcbb4b;
+          }
+        }
+
+        .card-rating{
+          i{
+            font-size: 10px;
+            color: #fcbb4b;
+          }
+
+          .last-star{
+            color: #cccccc;
+          }
+        }
+
+      }
 
 
   }
