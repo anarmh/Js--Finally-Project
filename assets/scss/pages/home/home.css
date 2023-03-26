@@ -633,8 +633,15 @@
 #tab-carousel .tab-menu ul li a {
   text-decoration: none;
   font-size: 30px;
-  color: #333;
+  color: #cccccc;
   font-weight: 600;
+}
+#tab-carousel .tab-menu ul li a:hover {
+  color: #fcbb4b;
+}
+#tab-carousel .tab-menu ul li .active-menu {
+  border-bottom: 1px solid #333;
+  color: #333;
 }
 #tab-carousel .card .img {
   position: relative;

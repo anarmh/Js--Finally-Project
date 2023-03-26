@@ -36,6 +36,27 @@ $('.responsive').slick({
           // instead of a settings object
         ]
       });
+
+   
+    
+  
+
+
+});
+
+
+let menues=document.querySelectorAll("#tab-carousel .tab-menu .item")
+     
+
+menues.forEach(menu => {
+  menu.addEventListener("click",function(e){
+   
+   
+   
+    // document.querySelector(".active-menu").classList.remove("active-menu");
+  
+  
+  })
 });
 
 
