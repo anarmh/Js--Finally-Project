@@ -615,4 +615,13 @@
 }
 #slide-banner .banners .banner3 .content .button:hover i {
   color: white;
+}
+
+#tab-carousel .theme .img-owl-1 {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }/*# sourceMappingURL=home.css.map */
