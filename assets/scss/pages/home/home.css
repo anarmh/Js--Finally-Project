@@ -617,11 +617,92 @@
   color: white;
 }
 
-#tab-carousel .theme .img-owl-1 {
-  z-index: 2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+#tab-carousel {
+  margin-top: 30px;
+}
+#tab-carousel .tab-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#tab-carousel .tab-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+#tab-carousel .tab-menu ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+}
+#tab-carousel .card .img {
+  position: relative;
+}
+#tab-carousel .card .img:hover .icons {
+  opacity: 1;
+}
+#tab-carousel .card .img:hover .wishlist {
+  opacity: 1;
+}
+#tab-carousel .card .img .box {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
   position: absolute;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tab-carousel .card .img .box span {
+  display: block;
+  color: white;
+}
+#tab-carousel .card .img .sale {
+  background-color: #ef837b;
+  top: 5%;
+}
+#tab-carousel .card .img .top {
+  background-color: #7dd2ea;
+  top: 17%;
+}
+#tab-carousel .card .icons {
+  opacity: 0;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+#tab-carousel .card .icons .icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#tab-carousel .card .icons .icon i {
+  color: white;
+  cursor: pointer;
+}
+#tab-carousel .card .icons .icon i:hover {
+  color: #fcbb4b;
+}
+#tab-carousel .card .wishlist {
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 30px;
+  height: 30px;
+  background-color: #fcbb4b;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tab-carousel .card .wishlist i {
+  display: block;
+  cursor: pointer;
 }/*# sourceMappingURL=home.css.map */
