@@ -801,4 +801,71 @@
 #bg-img .bg .content .right a:hover {
   background-color: rgba(184, 132, 41, 0.9647058824);
   opacity: 0.8;
+}
+
+#deals-outlet {
+  margin: 50px 0;
+  background-color: #f4f7ff;
+}
+#deals-outlet .head {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#deals-outlet .head h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #333;
+}
+#deals-outlet .head p {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+}
+#deals-outlet .deal {
+  background-image: url("../../../img/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#deals-outlet .deal .content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#deals-outlet .deal .content .top h2 {
+  color: #ef837b;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+#deals-outlet .deal .content .top p {
+  color: #777;
+  line-height: 1;
+}
+#deals-outlet .deal .content .center h3 {
+  font-size: 17px;
+}
+#deals-outlet .deal .content .center h3 a {
+  text-decoration: none;
+  color: #333;
+}
+#deals-outlet .deal .content .center h3 a:hover {
+  color: #fcbb4b;
+}
+#deals-outlet .deal .content .center p {
+  color: #ef837b;
+}
+#deals-outlet .deal .content .center p span {
+  color: #ccc;
+}
+#deals-outlet .deal .content .center a {
+  text-decoration: none;
+  color: #fcbb4b;
+}
+#deals-outlet .deal .content .center a:hover {
+  border-bottom: 1px solid #fcbb4b;
+}
+#deals-outlet .deal .content .bottom {
+  display: flex;
 }/*# sourceMappingURL=home.css.map */
