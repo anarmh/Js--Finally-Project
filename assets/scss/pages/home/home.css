@@ -823,11 +823,19 @@
   font-size: 16px;
 }
 #deals-outlet .deal {
+  width: 100%;
+  height: 100%;
   background-image: url("../../../img/bg-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 430px;
 }
 #deals-outlet .deal .content {
+  width: 100%;
+  height: 100%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -859,13 +867,175 @@
 #deals-outlet .deal .content .center p span {
   color: #ccc;
 }
-#deals-outlet .deal .content .center a {
+#deals-outlet .deal .content .center .shop-now {
   text-decoration: none;
   color: #fcbb4b;
 }
-#deals-outlet .deal .content .center a:hover {
+#deals-outlet .deal .content .center .shop-now:hover {
   border-bottom: 1px solid #fcbb4b;
 }
 #deals-outlet .deal .content .bottom {
   display: flex;
+  gap: 10px;
+}
+#deals-outlet .deal .content .bottom .char {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#deals-outlet .deal .content .bottom .date-time .date {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+#deals-outlet .deal .content .bottom .date-time .time {
+  width: 50px;
+  height: 50px;
+  background-color: #fcbb4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#deals-outlet .deal .content .bottom .date-time .time span {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+#deals-outlet .card .img {
+  position: relative;
+}
+#deals-outlet .card .img:hover .icons {
+  opacity: 1;
+}
+#deals-outlet .card .img:hover .wishlist {
+  opacity: 1;
+}
+#deals-outlet .card .img .box {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#deals-outlet .card .img .box span {
+  display: block;
+  color: white;
+}
+#deals-outlet .card .img .sale {
+  background-color: #ef837b;
+  top: 5%;
+}
+#deals-outlet .card .img .second-box {
+  background-color: #ef837b;
+  top: 5%;
+}
+#deals-outlet .card .img .top {
+  background-color: #7dd2ea;
+  top: 17%;
+}
+#deals-outlet .card .icons {
+  opacity: 0;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+#deals-outlet .card .icons .icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#deals-outlet .card .icons .icon i {
+  color: white;
+  cursor: pointer;
+}
+#deals-outlet .card .icons .icon i:hover {
+  color: #fcbb4b;
+}
+#deals-outlet .card .wishlist {
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 30px;
+  height: 30px;
+  background-color: #fcbb4b;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#deals-outlet .card .wishlist i {
+  display: block;
+  cursor: pointer;
+}
+#deals-outlet .card .card-body a {
+  text-decoration: none;
+}
+#deals-outlet .card .card-body .card-title a {
+  color: #ceced3;
+}
+#deals-outlet .card .card-body .card-title a:hover {
+  color: #fcbb4b;
+}
+#deals-outlet .card .card-body .card-text a {
+  color: #333;
+}
+#deals-outlet .card .card-body .card-text a:hover {
+  color: #fcbb4b;
+}
+#deals-outlet .card .card-body .card-price span {
+  color: #fcbb4b;
+}
+#deals-outlet .card .card-body .card-price .min {
+  color: #ef837b;
+}
+#deals-outlet .card .card-body .card-price .max {
+  color: #ccc;
+}
+#deals-outlet .card .card-body .card-rating span {
+  color: #cccccc;
+}
+#deals-outlet .card .card-body .card-rating i {
+  font-size: 10px;
+  color: #fcbb4b;
+}
+#deals-outlet .card .card-body .card-rating .last-star {
+  color: #cccccc;
+}
+#deals-outlet .card .card-body .card-rating .all-star {
+  color: #cccccc;
+}
+#deals-outlet .card .card-body .card-rating .full-star {
+  color: #fcbb4b;
+}
+#deals-outlet .shop-more-outlets {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#deals-outlet .shop-more-outlets a {
+  display: block;
+  padding: 10px 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+}
+#deals-outlet .shop-more-outlets a i {
+  font-size: 12px;
+}
+#deals-outlet .shop-more-outlets a:hover {
+  background-color: #fff;
+  color: #fcbb4b;
 }/*# sourceMappingURL=home.css.map */
