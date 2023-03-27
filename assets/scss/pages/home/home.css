@@ -630,16 +630,16 @@
   gap: 20px;
   list-style: none;
 }
-#tab-carousel .tab-menu ul li a {
-  text-decoration: none;
+#tab-carousel .tab-menu ul li {
   font-size: 30px;
   color: #cccccc;
   font-weight: 600;
+  cursor: pointer;
 }
-#tab-carousel .tab-menu ul li a:hover {
+#tab-carousel .tab-menu ul li:hover {
   color: #fcbb4b;
 }
-#tab-carousel .tab-menu ul li .active-menu {
+#tab-carousel .tab-menu ul .active-menu {
   border-bottom: 1px solid #333;
   color: #333;
 }
@@ -734,10 +734,19 @@
 #tab-carousel .card .card-body .card-price span {
   color: #fcbb4b;
 }
+#tab-carousel .card .card-body .card-rating span {
+  color: #cccccc;
+}
 #tab-carousel .card .card-body .card-rating i {
   font-size: 10px;
   color: #fcbb4b;
 }
 #tab-carousel .card .card-body .card-rating .last-star {
   color: #cccccc;
+}
+#tab-carousel .card .card-body .card-rating .all-star {
+  color: #cccccc;
+}
+#tab-carousel .card .card-body .card-rating .full-star {
+  color: #fcbb4b;
 }/*# sourceMappingURL=home.css.map */

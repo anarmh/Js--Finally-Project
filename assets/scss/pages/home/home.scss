@@ -200,21 +200,18 @@
       gap: 20px;
       list-style: none;
       li{
-        a{
-          text-decoration: none;
-          font-size: 30px;
-          color: #cccccc;
-          font-weight: 600;
-          &:hover{
-            color: #fcbb4b;
-          }
-         
+        font-size: 30px;
+        color: #cccccc;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+          color: #fcbb4b;
         }
-
-        .active-menu{
-          border-bottom: 1px solid #333;
-          color: #333;
-        }
+       
+      }
+      .active-menu{
+        border-bottom: 1px solid #333;
+        color: #333;
       }
     }
   }
@@ -344,6 +341,9 @@
         }
 
         .card-rating{
+          span{
+            color: #cccccc;
+          }
           i{
             font-size: 10px;
             color: #fcbb4b;
@@ -352,6 +352,15 @@
           .last-star{
             color: #cccccc;
           }
+
+          .all-star{
+            color: #cccccc;
+          }
+
+          .full-star{
+            color: #fcbb4b;
+          }
+          
         }
 
       }

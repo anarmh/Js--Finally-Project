@@ -46,15 +46,25 @@ $('.responsive').slick({
 
 
 let menues=document.querySelectorAll("#tab-carousel .tab-menu .item")
-     
+ let contents=document.querySelectorAll("#tab-carousel .contents .item")    
 
 menues.forEach(menu => {
   menu.addEventListener("click",function(e){
-   
-   
-   
-    // document.querySelector(".active-menu").classList.remove("active-menu");
-  
+    e.preventDefault();
+    document.querySelector(".active-menu").classList.remove("active-menu");
+    this.classList.add("active-menu");
+
+    contents.forEach(content => {
+      if(this.getAttribute("data-id")==content.getAttribute("data-id")){
+        
+        content.classList.remove("d-none")
+      }
+      else{
+        content.classList.add("d-none")
+      }
+
+      
+    });
   
   })
 });
