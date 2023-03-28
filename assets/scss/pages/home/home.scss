@@ -1159,6 +1159,144 @@
 
 
 }
+
+
+#shop-social{
+
+  .bg-img{
+
+    background-image: url("../../../img/bg-4.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 300px;
+    padding: 15px;
+    .content{
+      
+      height: 100%;
+      background-color: #fff;
+      .shop-text{
+        height: 100%;
+        display: flex;
+        align-items: center;
+       .text{
+
+           padding-top: 60px;
+            padding-bottom: 60px;
+         margin: 0 auto;
+         h3{
+          text-align: center;
+          font-weight: 400;
+          color: #333;
+          line-height: 1;
+         }
+         p{
+          text-align: center;
+           color: #999;
+           line-height: 1.5;
+           span{
+            color: #fcbb4b;
+           }
+         }
+
+         .social-icons{
+          display: flex;
+          justify-content: center;
+          
+          gap: 10px;
+          .social-icon{
+            height: 45px;
+            width: 45px;
+            border-radius: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:1px solid #d7d7d7;
+            &:hover{
+              background-color: #fff;
+            }
+            &:hover .fa-facebook-f{
+              color: #8f79ed;
+            }
+
+            &:hover .fa-twitter{
+              color:#79c8ed ;
+            }
+            &:hover .fa-instagram{
+              color:#dd6d9a ;
+            }
+            &:hover .fa-youtube{
+              color:#e66262 ;
+            }
+            &:hover .fa-pinterest{
+              color:#e66262 ;
+            }
+
+            i{
+              color: #fff;
+            }
+          }
+
+          .facebook{
+
+            background-color: #8f79ed;
+          }
+
+          .twitter{
+            background-color: #79c8ed;
+          }
+
+          .instagram{
+            background-color: #dd6d9a;
+          }
+
+          .youtube{
+            background-color: #e66262;
+          }
+
+          .pinterest{
+            background-color: #e66262;
+          }
+         }
+
+         .input-group{
+          display: flex;
+          .form-control{
+            height: 40px;
+            padding: 15px 10px;
+            &:focus{
+              border-color: #fcbb4b;
+              outline: 0 none;
+              box-shadow: none ;
+            }
+          }
+          button{
+            width: 70px;
+            height: 40px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: #fcbb4b;
+            border: none;
+            color: #fff;
+            &:hover{
+
+              background-color: #d49d3c;
+            }
+          }
+
+         }
+       
+        }
+
+
+
+
+      }
+
+    }
+  }
+}
   
     
     

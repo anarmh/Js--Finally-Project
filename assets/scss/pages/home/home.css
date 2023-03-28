@@ -1323,4 +1323,116 @@
 }
 #icon-box .icon-text .text p {
   color: #969696;
+}
+
+#shop-social .bg-img {
+  background-image: url("../../../img/bg-4.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  height: 300px;
+  padding: 15px;
+}
+#shop-social .bg-img .content {
+  height: 100%;
+  background-color: #fff;
+}
+#shop-social .bg-img .content .shop-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#shop-social .bg-img .content .shop-text .text {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+#shop-social .bg-img .content .shop-text .text h3 {
+  text-align: center;
+  font-weight: 400;
+  color: #333;
+  line-height: 1;
+}
+#shop-social .bg-img .content .shop-text .text p {
+  text-align: center;
+  color: #999;
+  line-height: 1.5;
+}
+#shop-social .bg-img .content .shop-text .text p span {
+  color: #fcbb4b;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d7d7d7;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon:hover {
+  background-color: #fff;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon:hover .fa-facebook-f {
+  color: #8f79ed;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon:hover .fa-twitter {
+  color: #79c8ed;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon:hover .fa-instagram {
+  color: #dd6d9a;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon:hover .fa-youtube {
+  color: #e66262;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon:hover .fa-pinterest {
+  color: #e66262;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .social-icon i {
+  color: #fff;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .facebook {
+  background-color: #8f79ed;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .twitter {
+  background-color: #79c8ed;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .instagram {
+  background-color: #dd6d9a;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .youtube {
+  background-color: #e66262;
+}
+#shop-social .bg-img .content .shop-text .text .social-icons .pinterest {
+  background-color: #e66262;
+}
+#shop-social .bg-img .content .shop-text .text .input-group {
+  display: flex;
+}
+#shop-social .bg-img .content .shop-text .text .input-group .form-control {
+  height: 40px;
+  padding: 15px 10px;
+}
+#shop-social .bg-img .content .shop-text .text .input-group .form-control:focus {
+  border-color: #fcbb4b;
+  outline: 0 none;
+  box-shadow: none;
+}
+#shop-social .bg-img .content .shop-text .text .input-group button {
+  width: 70px;
+  height: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #fcbb4b;
+  border: none;
+  color: #fff;
+}
+#shop-social .bg-img .content .shop-text .text .input-group button:hover {
+  background-color: #d49d3c;
 }/*# sourceMappingURL=home.css.map */
