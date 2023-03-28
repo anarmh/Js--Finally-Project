@@ -1061,7 +1061,7 @@
 #trending-products .list-products ul .item:hover {
   color: #fcbb4b;
 }
-#trending-products .list-products ul .active {
+#trending-products .list-products ul .active-tab {
   color: #fcbb4b;
   border-bottom: 1px solid #fcbb4b;
 }
