@@ -83,6 +83,42 @@ $(document).ready(function () {
           infinite: false,
           speed: 300,
           slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+     
+        $('.product-selling').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
           slidesToScroll: 4,
           responsive: [
             {
@@ -122,7 +158,7 @@ $(document).ready(function () {
   
   
   let menues=document.querySelectorAll("#tab-carousel .tab-menu .item")
-   let contents=document.querySelectorAll("#tab-carousel .contents .item")    
+      
   
   menues.forEach(menu => {
     menu.addEventListener("click",function(e){
@@ -157,9 +193,6 @@ $(document).ready(function () {
   
   let items=document.querySelectorAll("#trending-products .list-products .item");
   
-  let cards=document.querySelectorAll("#trending-products .cards .product");
-  
-  
   items.forEach(item => {
     
     item.addEventListener("click",function(e){
@@ -183,7 +216,39 @@ $(document).ready(function () {
       //   }
       // });
     })
+    
   });
   
+
+  let sellingProducts=document.querySelectorAll("#top-selling .list-products .item");
   
+
+  sellingProducts.forEach(product => {
+    
+
+    product.addEventListener("click",function(){
+
+      document.querySelector(".active-product").classList.remove("active-product")
+      this.classList.add("active-product");
+  
+  
+      
+      let id = $(product).data('id');
+    
+      $('.product-selling').addClass('d-none');
+      $('.product-selling[data-id='+id+']').removeClass('d-none');
+  
+      $('.product-selling[data-id='+id+']').slick('setPosition');
+
+
+
+
+    })
+   
+
+  });
+
+
+
+
 })

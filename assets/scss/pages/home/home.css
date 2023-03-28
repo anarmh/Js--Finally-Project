@@ -1193,7 +1193,7 @@
 #top-selling .list-products ul .item:hover {
   color: #fcbb4b;
 }
-#top-selling .list-products ul .active-tab {
+#top-selling .list-products ul .active-product {
   color: #fcbb4b;
   border-bottom: 1px solid #fcbb4b;
 }
