@@ -1325,6 +1325,9 @@
   color: #969696;
 }
 
+#shop-social {
+  margin-top: 20px;
+}
 #shop-social .bg-img {
   background-image: url("../../../img/bg-4.jpg");
   background-repeat: no-repeat;
