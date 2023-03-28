@@ -1307,4 +1307,20 @@
 }
 #top-selling .cards .card .card-body .card-rating .full-star {
   color: #fcbb4b;
+}
+
+#icon-box .icon-text {
+  display: flex;
+}
+#icon-box .icon-text .icon {
+  font-size: 40px;
+}
+#icon-box .icon-text .text {
+  padding-left: 20px;
+}
+#icon-box .icon-text .text h5 {
+  font-size: 17px;
+}
+#icon-box .icon-text .text p {
+  color: #969696;
 }/*# sourceMappingURL=home.css.map */

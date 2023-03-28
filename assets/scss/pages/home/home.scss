@@ -1128,6 +1128,37 @@
 
 
 }
+
+
+#icon-box{
+
+
+.icon-text{
+
+  display: flex;
+
+  .icon{
+
+    font-size: 40px;
+  }
+  .text{
+
+    padding-left: 20px;
+
+    h5{
+      font-size: 17px;
+      
+    }
+    p{
+      color: #969696;
+     
+    }
+  }
+}
+
+
+
+}
   
     
     
