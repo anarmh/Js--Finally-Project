@@ -84,6 +84,21 @@
 
 
     table{
+        .title{
+            color: #cecdd1;
+        }
+        .cart-info{
+            i{
+                cursor: pointer;
+                color: #cecdd1;
+                &:hover{
+                    color: #777;
+                }
+            }
+            .total-result{
+                color: #fcb941;
+            }
+        }
 
         img{
             width: 50px;
@@ -119,7 +134,7 @@
                     align-items: center;
                     i{
                         font-size: 15px;
-                        cursor: pointer;
+                        cursor: pointer !important;
                         color: #333;
                         &:hover{
                             color: #fcb941;

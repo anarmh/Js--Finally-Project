@@ -49,7 +49,7 @@ getBasketCount(products)
 function removeProduct(){
 
   let productsDelete=document.querySelectorAll(".delete-item")
- 
+  let inputNumbers = document.querySelectorAll("input[type=number]");
   productsDelete.forEach(btn=> {
     btn.addEventListener("click",function(){
       let deleteItem=this.closest("tr");
@@ -63,7 +63,51 @@ function removeProduct(){
 
     })
   });
+
+  inputNumbers.forEach((input) => {
+    input.addEventListener("change", function () {
+      let parentRow = this.closest("tr");
+      let productId = parentRow.getAttribute("data-id");
+      let product = products.find((el) => el.id == productId);
+      product.count = Number(this.value);
+      localStorage.setItem("basket", JSON.stringify(products));
+      getBasketCount(products);
+      GetAllPrice();
+    });
+  });
  
+  let minusButtons = document.querySelectorAll(".prev");
+  let plusButtons = document.querySelectorAll(".next");
+
+  minusButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      let inputNumber = this.nextElementSibling;
+      let parentRow = this.closest("tr");
+      let productId = parentRow.getAttribute("data-id");
+      let product = products.find((el) => el.id == productId);
+      if (inputNumber.value > 1) {
+        inputNumber.value = Number(inputNumber.value) - 1;
+        product.count = Number(inputNumber.value);
+        localStorage.setItem("basket", JSON.stringify(products));
+        getBasketCount(products);
+        GetAllPrice();
+      }
+    });
+  });
+
+  plusButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      let inputNumber = this.previousElementSibling;
+      let parentRow = this.closest("tr");
+      let productId = parentRow.getAttribute("data-id");
+      let product = products.find((el) => el.id == productId);
+      inputNumber.value = Number(inputNumber.value) + 1;
+      product.count = Number(inputNumber.value);
+      localStorage.setItem("basket", JSON.stringify(products));
+      getBasketCount(products);
+      GetAllPrice();
+    });
+  });
 }
 
 
