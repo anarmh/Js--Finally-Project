@@ -270,8 +270,43 @@ basketsClick.forEach(btn => {
     let cardImage=this.closest(".img").firstElementChild.getAttribute("src");
     let cardName=this.closest(".img").nextElementSibling.firstElementChild.children[1].innerText;
     let cardDesc=this.closest(".img").nextElementSibling.children[1].firstElementChild.firstElementChild.innerText;
-    console.log(cardDesc);
+    let cardPrice=parseInt(this.closest(".img").nextElementSibling.children[2].children[1].innerText);
+    let cardId=parseInt(this.closest(".img").parentNode.getAttribute("data-id"));
+    console.log(cardId);
+    let existCard=basket.find(m=>m.id==cardId);
 
+    if(existCard!=undefined){
+
+      existCard.count++;
+      existCard.price=existCard.count*cardPrice
+    }
+    else{
+
+      basket.push({
+        id:cardId,
+        name:cardName,
+        description:cardDesc,
+        image:cardImage,
+        price:cardPrice,
+        count:1
+      })
+    }
+    localStorage.setItem("basket",JSON.stringify(basket));
+    getBasketCount(basket);
 
   })
 });
+
+function getBasketCount(arr){
+
+
+  let count=0;
+
+  for (const item of arr) {
+    count+=item.count;
+  }
+
+  document.querySelector("#up-navbar .cart-sup span").innerText=count;
+}
+
+getBasketCount(basket);
