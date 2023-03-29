@@ -655,4 +655,17 @@
 #cart aside .sum-cart .checkout:hover {
   color: #fff;
   background-color: #fcb941;
+}
+#cart .continue {
+  margin-top: 20px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #ebebeb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+}
+#cart .continue:hover {
+  color: #fcb941;
 }/*# sourceMappingURL=cart.css.map */

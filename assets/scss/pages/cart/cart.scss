@@ -233,4 +233,17 @@
         }
        
     }
+    .continue{
+        margin-top: 20px;
+        display: block;
+        padding: 5px ;
+        border: 1px solid #ebebeb;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        color: #333;
+        &:hover{
+            color: #fcb941;
+        }
+    }
 }
