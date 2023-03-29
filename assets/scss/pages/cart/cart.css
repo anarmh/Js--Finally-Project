@@ -514,12 +514,35 @@
 }
 #cart table tr .input {
   display: flex;
-  width: 50px;
-  height: 30px;
-  justify-content: center;
+  width: 100px;
+  height: 40px;
+  gap: 20px;
+  border: 1px solid #d7d7d7;
+  align-items: center;
 }
 #cart table tr .input input {
-  width: 100%;
+  border: none;
+  outline: none;
+  width: 50%;
+}
+#cart table tr .input input::-webkit-outer-spin-button, #cart table tr .input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#cart table tr .input .icon {
+  width: 25% px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cart table tr .input .icon i {
+  font-size: 15px;
+  cursor: pointer;
+  color: #333;
+}
+#cart table tr .input .icon i:hover {
+  color: #fcb941;
 }
 #cart .cart-bottom {
   padding-top: 20px;

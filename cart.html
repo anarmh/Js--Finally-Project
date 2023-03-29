@@ -260,6 +260,7 @@
                                 <th scope="col">Price</th>
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Total</th>
+                                <th scope="col"></th>
                               </tr>
                             </thead>
                             <tbody >
@@ -269,12 +270,13 @@
                                 <td>Otto</td>
                                 <td>
                                     <div class="input">
-                                        <div class="prev"><i class="fa-solid fa-minus"></i></div>
-                                        <input type="number">
-                                        <div class="next"><i class="fa-solid fa-plus"></i></div>
+                                        <div class=" icon prev "><i class="fa-solid fa-minus"></i></div>
+                                        <input type="number" value="1">
+                                        <div class="icon next"><i class="fa-solid fa-plus"></i></div>
                                     </div>
                                 </td>
                                 <td>@mdo</td>
+                                <td><i class="fa-solid fa-xmark"></i></td>
                               </tr>
                             
                             </tbody>
@@ -298,7 +300,72 @@
                           </div>
 
                     </div>
-                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3">
+                        <aside>
+                            <div class="sum-cart">
+                                <h3>Cart Total</h3>
+                                <table class="table borderless">
+                                   
+                                    <tbody>
+                                      <tr>
+                                        <td>Subtotal</td>
+                                        <td>
+                                            <span>$</span>
+                                            <span></span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Shipping</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <div class="radio">
+                                                <input type="radio" name="shipping">
+                                               <label for="">Free Shipping</label>
+                                            </div>
+                                        </td>
+                                        <td>$0.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <div class="radio">
+                                                <input type="radio" name="shipping">
+                                               <label for="">Standart</label>
+                                            </div>
+                                        </td>
+                                        <td>$10.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <div class="radio">
+                                                <input type="radio" name="shipping">
+                                               <label for="">Express</label>
+                                            </div>
+                                        </td>
+                                        <td>$20.00</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Estimate for your Country <br>
+                                        <a href="">Change address</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td><span>$</span> <span></span></td>
+                                    </tr>
+                                    
+    
+                                    </tbody>
+                                  </table>
+                                  <a href="">PROCEED TO CHECKOUT</a>
+                            </div>
+                            <a href="">CONTINUE SHOPPING <i class="fa-solid fa-arrows-rotate"></i></a>
+                        </aside>
+                       
+
+                        
+                    </div>
                 </div>
             </div>
 
