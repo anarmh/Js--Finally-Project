@@ -1,3 +1,5 @@
+"use strict"
+
 $(function(){
   
 $(document).ready(function () {
@@ -250,5 +252,26 @@ $(document).ready(function () {
 
 
 
-
 })
+
+let basketsClick=document.querySelectorAll("#tab-carousel .icon .fa-cart-shopping");
+
+let basket=[];
+
+if(JSON.parse(localStorage.getItem("basket"))!=null){
+  basket=JSON.parse(localStorage.getItem("basket"));
+}
+
+basketsClick.forEach(btn => {
+  
+  btn.addEventListener("click",function(e){
+    e.preventDefault();
+
+    let cardImage=this.closest(".img").firstElementChild.getAttribute("src");
+    let cardName=this.closest(".img").nextElementSibling.firstElementChild.children[1].innerText;
+    let cardDesc=this.closest(".img").nextElementSibling.children[1].firstElementChild.firstElementChild.innerText;
+    console.log(cardDesc);
+
+
+  })
+});
