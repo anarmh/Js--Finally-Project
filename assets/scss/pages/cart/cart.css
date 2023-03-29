@@ -597,4 +597,62 @@
 }
 #cart .cart-bottom .right button i {
   font-size: 12px;
+}
+#cart aside {
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 100%;
+}
+#cart aside .sum-cart h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+#cart aside .sum-cart .table tr {
+  line-height: 1.5;
+}
+#cart aside .sum-cart .table td {
+  border: none !important;
+}
+#cart aside .sum-cart .table .subtotal {
+  border-bottom: 1px solid #ebebeb;
+}
+#cart aside .sum-cart .table .subtotal .sub {
+  font-size: 20px;
+  font-weight: 500;
+}
+#cart aside .sum-cart .table .shipping {
+  font-size: 20px;
+  font-weight: 500;
+}
+#cart aside .sum-cart .table .estimate {
+  font-size: 15px;
+  font-weight: 500;
+}
+#cart aside .sum-cart .table .estimate a {
+  color: #b5aab5;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid #b5aab5;
+}
+#cart aside .sum-cart .table .estimate a:hover {
+  color: #fcb941;
+  border-bottom: 1px solid #fcb941;
+}
+#cart aside .sum-cart .table .total {
+  color: #fcb941;
+  font-size: 20px;
+}
+#cart aside .sum-cart .checkout {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px 0;
+  color: #fcb941;
+  text-align: center;
+  border: 1px solid #fcb941;
+}
+#cart aside .sum-cart .checkout:hover {
+  color: #fff;
+  background-color: #fcb941;
 }/*# sourceMappingURL=cart.css.map */
