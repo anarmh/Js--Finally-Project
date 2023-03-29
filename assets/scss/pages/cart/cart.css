@@ -509,6 +509,28 @@
 #cart {
   padding-top: 30px;
 }
+#cart .cart-header .cart-empty i {
+  font-size: 100px;
+  color: #666666;
+}
+#cart .cart-header .cart-empty .add-cart {
+  color: #666666;
+}
+#cart .cart-header .cart-empty .return a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #fcb941;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#cart .cart-header .cart-empty .return a:hover {
+  background-color: #c28f30;
+}
+#cart table img {
+  width: 50px;
+  height: 50px;
+}
 #cart table tr {
   height: 40px;
 }

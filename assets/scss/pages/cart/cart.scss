@@ -52,7 +52,43 @@
 
 #cart{
     padding-top: 30px;
+
+    .cart-header{
+
+        .cart-empty{
+
+            i{
+                font-size: 100px;
+                color: #666666;
+            }
+            .add-cart{
+
+                color: #666666;
+            }
+            .return{
+
+                a{
+                    text-decoration: none;
+                    padding: 10px 30px;
+                    background-color: #fcb941;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    &:hover{
+                        background-color: #c28f30;
+                    }
+                }
+            }
+        }
+    }
+
+
     table{
+
+        img{
+            width: 50px;
+            height: 50px;
+        }
            tr{
             
             height: 40px;
