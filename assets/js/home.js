@@ -271,34 +271,46 @@ wishlist.forEach(btn => {
   
   btn.addEventListener("click",function(e){
     e.preventDefault();
-
-    let cardImage=this.closest(".img").firstElementChild.getAttribute("src");
-    let cardName=this.closest(".img").nextElementSibling.firstElementChild.children[1].innerText;
-    let cardDesc=this.closest(".img").nextElementSibling.children[1].firstElementChild.firstElementChild.innerText;
-    let cardPrice=parseInt(this.closest(".img").nextElementSibling.children[2].children[1].innerText);
-    let cardId=parseInt(this.closest(".img").parentNode.getAttribute("data-id"));
-      
-    let existCard= basketWishlist.find(m=>m.id==cardId);
-
-    if(existCard!=undefined){
-
-      existCard.count++;
-      existCard.price=existCard.count*cardPrice
-    }
-    else{
-
-      basketWishlist.push({
-        id:cardId,
-        name:cardName,
-        description:cardDesc,
-        image:cardImage,
-        price:cardPrice,
-        count:1
+    if(this.classList.contains('active-wish')){
+      this.classList.remove('active-wish');
+      let cardId=parseInt(this.closest(".img").parentNode.getAttribute("data-id"));
+      let wishes = JSON.parse(localStorage.getItem("basketWishlist"));
+      let lists = wishes.filter(val =>  { 
+        return val.id != cardId 
       })
-    }
-    localStorage.setItem("basketWishlist",JSON.stringify(basketWishlist));
-    getWishlistCount(basketWishlist);
+      localStorage.setItem("basketWishlist",JSON.stringify(lists));
+      basketWishlist=JSON.parse(localStorage.getItem("basketWishlist"));
+    }else{
+      let cardImage=this.closest(".img").firstElementChild.getAttribute("src");
+      let cardName=this.closest(".img").nextElementSibling.firstElementChild.children[1].innerText;
+      let cardDesc=this.closest(".img").nextElementSibling.children[1].firstElementChild.firstElementChild.innerText;
+      let cardPrice=parseInt(this.closest(".img").nextElementSibling.children[2].children[1].innerText);
+      let cardId=parseInt(this.closest(".img").parentNode.getAttribute("data-id"));
+      this.classList.add('active-wish');
+      
+      let existCard= basketWishlist.find(m=>m.id==cardId);
 
+      if(existCard!=undefined){
+
+        existCard.count++;
+        existCard.price=existCard.count*cardPrice
+      }
+      else{
+
+        basketWishlist.push({
+          id:cardId,
+          name:cardName,
+          description:cardDesc,
+          image:cardImage,
+          price:cardPrice,
+          count:1
+        })
+      }
+      localStorage.setItem("basketWishlist",JSON.stringify(basketWishlist));
+      basketWishlist=JSON.parse(localStorage.getItem("basketWishlist"));
+    }
+    getWishlistCount(basketWishlist);
+    
   })
 });
 

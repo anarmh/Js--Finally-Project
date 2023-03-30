@@ -723,6 +723,9 @@
   cursor: pointer;
   color: #fff;
 }
+#tab-carousel .card .wishlist .active-wish {
+  color: black;
+}
 #tab-carousel .card .card-body a {
   text-decoration: none;
 }
