@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/scss/pages/cart/cart.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./assets/scss/pages/wishlist/wishlist.css" />
+  </head>
+  <body>
     <header>
         <section id="up-navbar">
           <div class="container">
@@ -99,7 +98,7 @@
                       </div>
                       <div class="icon-text">
                         <div class="icon">
-                          <a href="wishlist.html"> <i class="fa-regular fa-heart"></i></a>
+                          <a href=""> <i class="fa-regular fa-heart"></i></a>
                           <div class="wislist-sup">
                             <span>0</span>
                           </div>
@@ -108,11 +107,11 @@
                       </div>
                       <div class="icon-text">
                         <div class="icon">
-                          <a href="">
+                          <a href="cart.html">
                             <i class="fa-solid fa-cart-shopping"></i
                           ></a>
                           <div class="cart-sup">
-                            <span>0</span>
+                            <span> 0</span>
                           </div>
                         </div>
                         <p>Cart</p>
@@ -227,7 +226,7 @@
         <section id="page-header">
             <div class="container">
              
-              <h1 class="title">Shopping Cart</h1>
+              <h1 class="title">Wishlist</h1>
               <p>Shop</p>
             </div>
           </section>
@@ -241,154 +240,74 @@
                       <i class="fa-solid fa-angle-right"></i
                       ><a href="">Shop</a>
                     </li>
-                    <li><i class="fa-solid fa-angle-right"></i>Shopping Cart</li>
+                    <li><i class="fa-solid fa-angle-right"></i>Wishlist</li>
                   </ul>
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="cart">
-              <div class="cart-header d-none">
+          <section id="wishlist">
+            <div class="wishlist-header d-none ">
                 <div class="container">
                   <div class="row">
                     <div class="col-12">
-                      <div class="cart-empty text-center">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <p class="add-cart my-5">No products added to the cart</p>
-                        <p class="return"><a href="">Return to shop</a></p>
+                      <div class="wishlist-empty text-center">
+                        <i class="fa-regular fa-heart"></i>
+                        <p class="add-wishlist my-5">No products added to the wishlist</p>
+                        <p class="return"><a href="">Go shop</a></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-         
-
-            <div class="container ">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 closest">
+                    <div class="col-12">
                         <table class="table ">
                             <thead>
                               <tr>
                                 <th class="title"scope="col">Product</th>
                                 <th class="title" scope="col"></th>
                                 <th class="title" scope="col">Price</th>
-                                <th class="title" scope="col">Quantity</th>
-                                <th class="title" scope="col">Total</th>
+                                <th class="title" scope="col">Stock status</th>
                                 <th class="title" scope="col"></th>
+                                
                               </tr>
                             </thead>
-                            <tbody class="cart-info">
-                              <!-- <tr>
-                                <th >1</th>
+                            <tbody class="wishlist-info">
+                              <tr>
+                                <td >1</td>
                                 <td>Mark</td>
-                                <td>Otto</td>
-                                <td>
-                                    <div class="input">
-                                        <div class=" icon prev "><i class="fa-solid fa-minus"></i></div>
-                                        <input type="number" value="1">
-                                        <div class="icon next"><i class="fa-solid fa-plus"></i></div>
-                                    </div>
+                                <td class="text"> 
+                                    <span></span>
                                 </td>
-                                <td>@mdo</td>
-                                <td><i class="fa-solid fa-xmark"></i></td>
-                              </tr> -->
+                                <td class="text">
+                                   <span>In stock</span>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <button type="submit">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            ADD TO CART
+                                        </button>
+                                        <i class="fa-solid fa-xmark"></i>
+                                        
+                                    </div>
+                                   
+                                </td>
+                               
+                              </tr>
                             
                             </tbody>
                           </table>
-                          <div class="cart-bottom">
-                            <div class="left">
-                                <form action="">
-                                    <input type="text" class="" placeholder="coupon code">
-                                    <button type="submit">
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </button>
-                                </form>
-                              
-                            </div>
-                            <div class="right">
-                                <button type="submit">
-                                    <span>UPDATE CART</span>
-                                    <i class="fa-solid fa-arrows-rotate"></i>
-                                </button>
-                            </div>
-                          </div>
-
-                    </div>
-                    <div class="col-lg-3 cart-total">
-                        <aside>
-                            <div class="sum-cart">
-                                <h3>Cart Total</h3>
-                                <table class="table borderless">
-                                   
-                                    <tbody>
-                                      <tr class="subtotal">
-                                        <td class="sub">Subtotal</td>
-                                        <td>
-                                            <span></span>
-                                            <span class=""></span>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td class="shipping">Shipping</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <div class="radio">
-                                                <input type="radio" name="shipping">
-                                               <label for="">Free Shipping</label>
-                                            </div>
-                                        </td>
-                                        <td>$0.00</td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <div class="radio">
-                                                <input type="radio" name="shipping">
-                                               <label for="">Standart</label>
-                                            </div>
-                                        </td>
-                                        <td>$10.00</td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <div class="radio">
-                                                <input type="radio" name="shipping">
-                                               <label for="">Express</label>
-                                            </div>
-                                        </td>
-                                        <td>$20.00</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="estimate">Estimate for your Country <br>
-                                        <a href="">Change address</a></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="total">Total</td>
-                                        <td class="total"><span>$</span><span class="all-total"></span></td>
-                                    </tr>
-                                    
-    
-                                    </tbody>
-                                  </table>
-                                  <a class="checkout" href="">PROCEED TO CHECKOUT</a>
-                            </div>
-                            
-                        </aside>
-                        <a class="continue" href="">CONTINUE SHOPPING <i class="fa-solid fa-arrows-rotate"></i></a> 
-                        
                     </div>
                 </div>
             </div>
-
-
           </section>
 
-
-
       </main>
+
       <footer>
         <section id="footer">
           <div class="container">
@@ -463,7 +382,11 @@
         </section>
       </footer>
 
-    <script src="https://kit.fontawesome.com/9c6e6ff268.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/cart.js"></script>
-</body>
+
+    <script
+      src="https://kit.fontawesome.com/9c6e6ff268.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/wishlist.js"></script>
+  </body>
 </html>

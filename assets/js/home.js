@@ -184,9 +184,6 @@ $(document).ready(function () {
   
 
  
-  
-
- 
   let sellingProducts = $("#top-selling .list-products .item");
 
   sellingProducts.on("click", function(e) {
@@ -221,7 +218,7 @@ basketsClick.forEach(btn => {
     let cardDesc=this.closest(".img").nextElementSibling.children[1].firstElementChild.firstElementChild.innerText;
     let cardPrice=parseInt(this.closest(".img").nextElementSibling.children[2].children[1].innerText);
     let cardId=parseInt(this.closest(".img").parentNode.getAttribute("data-id"));
-    console.log(cardId);
+    
     let existCard=basket.find(m=>m.id==cardId);
 
     if(existCard!=undefined){
@@ -259,3 +256,62 @@ function getBasketCount(arr){
 }
 
 getBasketCount(basket);
+
+
+
+let wishlist=document.querySelectorAll("#tab-carousel .wishlist .fa-heart")
+
+let basketWishlist=[];
+
+if(JSON.parse(localStorage.getItem("basketWishlist"))!=null){
+  basketWishlist=JSON.parse(localStorage.getItem("basketWishlist"));
+}
+
+wishlist.forEach(btn => {
+  
+  btn.addEventListener("click",function(e){
+    e.preventDefault();
+
+    let cardImage=this.closest(".img").firstElementChild.getAttribute("src");
+    let cardName=this.closest(".img").nextElementSibling.firstElementChild.children[1].innerText;
+    let cardDesc=this.closest(".img").nextElementSibling.children[1].firstElementChild.firstElementChild.innerText;
+    let cardPrice=parseInt(this.closest(".img").nextElementSibling.children[2].children[1].innerText);
+    let cardId=parseInt(this.closest(".img").parentNode.getAttribute("data-id"));
+      
+    let existCard= basketWishlist.find(m=>m.id==cardId);
+
+    if(existCard!=undefined){
+
+      existCard.count++;
+      existCard.price=existCard.count*cardPrice
+    }
+    else{
+
+      basketWishlist.push({
+        id:cardId,
+        name:cardName,
+        description:cardDesc,
+        image:cardImage,
+        price:cardPrice,
+        count:1
+      })
+    }
+    localStorage.setItem("basketWishlist",JSON.stringify(basketWishlist));
+    getWishlistCount(basketWishlist);
+
+  })
+});
+
+function getWishlistCount(arr){
+
+
+  let count=0;
+
+  for (const item of arr) {
+    count+=item.count;
+  }
+
+  document.querySelector("#up-navbar .wislist-sup span").innerText=count;
+}
+
+getWishlistCount(basketWishlist);

@@ -506,17 +506,17 @@
   font-size: 20px;
 }
 
-#cart {
+#wishlist {
   padding-top: 30px;
 }
-#cart .cart-header .cart-empty i {
+#wishlist .wishlist-header .wishlist-empty i {
   font-size: 100px;
   color: #666666;
 }
-#cart .cart-header .cart-empty .add-cart {
+#wishlist .wishlist-header .wishlist-empty .add-wishlist {
   color: #666666;
 }
-#cart .cart-header .cart-empty .return a {
+#wishlist .wishlist-header .wishlist-empty .return a {
   text-decoration: none;
   padding: 10px 30px;
   background-color: #fcb941;
@@ -524,186 +524,38 @@
   text-transform: uppercase;
   font-weight: 500;
 }
-#cart .cart-header .cart-empty .return a:hover {
+#wishlist .wishlist-header .wishlist-empty .return a:hover {
   background-color: #c28f30;
 }
-#cart table .title {
-  color: #cecdd1;
+#wishlist .table thead th {
+  color: #999;
 }
-#cart table .cart-info td {
-  padding: 30px 0;
+#wishlist .table .wishlist-info td {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-#cart table .cart-info i {
-  cursor: pointer;
-  color: #cecdd1;
+#wishlist .table .wishlist-info .text span {
+  color: #fcb941 !important;
 }
-#cart table .cart-info i:hover {
-  color: #777;
-}
-#cart table .cart-info .total-result {
+#wishlist .table .wishlist-info .button button {
+  padding: 10px 40px;
   color: #fcb941;
-}
-#cart table img {
-  width: 50px;
-  height: 50px;
-}
-#cart table tr {
-  height: 40px;
-}
-#cart table tr .input {
-  display: flex;
-  width: 100px;
-  height: 40px;
-  gap: 20px;
-  border: 1px solid #d7d7d7;
-  align-items: center;
-}
-#cart table tr .input input {
-  border: none;
-  outline: none;
-  width: 50%;
-}
-#cart table tr .input input::-webkit-outer-spin-button, #cart table tr .input input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-#cart table tr .input .icon {
-  width: 25% px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#cart table tr .input .icon i {
-  font-size: 15px;
-  cursor: pointer !important;
-  color: #333;
-}
-#cart table tr .input .icon i:hover {
-  color: #fcb941;
-}
-#cart .cart-bottom {
-  padding-top: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-#cart .cart-bottom .left {
-  width: 50%;
-}
-#cart .cart-bottom .left input {
-  padding-left: 10px;
-  width: 50%;
-  height: 40px;
-  border: none;
-  background-color: #fafafa;
-  outline: none;
-}
-#cart .cart-bottom .left input:focus {
-  border: 1px solid #fcb941;
-}
-#cart .cart-bottom .left button {
-  width: 40px;
-  height: 40px;
+  font-size: 12px;
   border: 1px solid #fcb941;
   background-color: #fff;
 }
-#cart .cart-bottom .left button i {
-  color: #fcb941;
-}
-#cart .cart-bottom .left button:hover {
+#wishlist .table .wishlist-info .button button:hover {
   background-color: #fcb941;
-}
-#cart .cart-bottom .left button:hover i {
   color: #fff;
 }
-#cart .cart-bottom .right {
-  width: 50%;
-  display: flex;
-  justify-content: end;
+#wishlist .table .wishlist-info .button button i {
+  padding-right: 10px;
 }
-#cart .cart-bottom .right button {
-  width: 30%;
-  height: 40px;
-  border: 1px solid #d7d7d7;
+#wishlist .table .wishlist-info .button .fa-xmark {
+  padding-left: 20px;
+  cursor: pointer;
+  color: #ccc;
 }
-#cart .cart-bottom .right button:hover {
-  color: #fcb941;
-}
-#cart .cart-bottom .right button span {
-  font-size: 12px;
-}
-#cart .cart-bottom .right button i {
-  font-size: 12px;
-}
-#cart aside {
-  background-color: #f9f9f9;
-  padding: 20px;
-  width: 100%;
-}
-#cart aside .sum-cart h3 {
-  font-size: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #cccccc;
-}
-#cart aside .sum-cart .table tr {
-  line-height: 1.5;
-}
-#cart aside .sum-cart .table td {
-  border: none !important;
-}
-#cart aside .sum-cart .table .subtotal {
-  border-bottom: 1px solid #ebebeb;
-}
-#cart aside .sum-cart .table .subtotal .sub {
-  font-size: 20px;
-  font-weight: 500;
-}
-#cart aside .sum-cart .table .shipping {
-  font-size: 20px;
-  font-weight: 500;
-}
-#cart aside .sum-cart .table .estimate {
-  font-size: 15px;
-  font-weight: 500;
-}
-#cart aside .sum-cart .table .estimate a {
-  color: #b5aab5;
-  padding-bottom: 5px;
-  text-decoration: none;
-  border-bottom: 1px solid #b5aab5;
-}
-#cart aside .sum-cart .table .estimate a:hover {
-  color: #fcb941;
-  border-bottom: 1px solid #fcb941;
-}
-#cart aside .sum-cart .table .total {
-  color: #fcb941;
-  font-size: 20px;
-}
-#cart aside .sum-cart .checkout {
-  display: block;
-  font-size: 15px;
-  text-decoration: none;
-  padding: 5px 0;
-  color: #fcb941;
-  text-align: center;
-  border: 1px solid #fcb941;
-}
-#cart aside .sum-cart .checkout:hover {
-  color: #fff;
-  background-color: #fcb941;
-}
-#cart .continue {
-  margin-top: 20px;
-  display: block;
-  padding: 5px;
-  border: 1px solid #ebebeb;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
+#wishlist .table .wishlist-info .button .fa-xmark:hover {
   color: #333;
-}
-#cart .continue:hover {
-  color: #fcb941;
-}/*# sourceMappingURL=cart.css.map */
+}/*# sourceMappingURL=wishlist.css.map */
