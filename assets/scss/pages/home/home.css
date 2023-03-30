@@ -721,6 +721,7 @@
 #tab-carousel .card .wishlist i {
   display: block;
   cursor: pointer;
+  color: #fff;
 }
 #tab-carousel .card .card-body a {
   text-decoration: none;
