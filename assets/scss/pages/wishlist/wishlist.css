@@ -530,6 +530,10 @@
 #wishlist .table thead th {
   color: #999;
 }
+#wishlist .table .wishlist-info img {
+  width: 50px;
+  height: 50px;
+}
 #wishlist .table .wishlist-info td {
   padding-top: 30px;
   padding-bottom: 30px;
