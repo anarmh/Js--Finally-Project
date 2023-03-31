@@ -595,64 +595,101 @@
   font-size: 25px;
   padding-bottom: 40px;
 }
-#meet-our-team .member h3 {
-  font-size: 15px;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 20px;
+#meet-our-team .hide:hover .about-text {
+  display: none;
 }
-#meet-our-team .member h3 span {
-  color: #777;
+#meet-our-team .card {
+  overflow: hidden;
+  height: 550px;
 }
-#meet-our-team .img-content {
-  position: relative;
+#meet-our-team .card:hover .bg {
+  opacity: 0.5;
 }
-#meet-our-team .img-content:hover .member-content {
+#meet-our-team .card:hover .intro {
+  height: 450px;
   opacity: 1;
+  visibility: visible;
 }
-#meet-our-team .img-content .img {
-  background-image: url("../../../img/member-1.jpg");
-  width: 100%;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#meet-our-team .img-content .member-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+#meet-our-team .card .bg {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  border: none;
+  background-color: #333;
   opacity: 0;
+}
+#meet-our-team .card .intro {
+  width: 100%;
+  height: 0px;
+  position: absolute;
   bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.7s ease;
 }
-#meet-our-team .img-content .member-content h3 {
+#meet-our-team .card .intro h4 {
+  font-size: 20px;
   text-align: center;
+  color: #fff;
+}
+#meet-our-team .card .intro h5 {
   font-size: 15px;
-  color: #fff;
-  padding-bottom: 10px;
-}
-#meet-our-team .img-content .member-content h3 span {
-  font-weight: 300;
-}
-#meet-our-team .img-content .member-content p {
-  color: #fff;
-  line-height: 0.5;
+  color: #ebebeb;
   text-align: center;
+  font-weight: 400;
+  padding-bottom: 20px;
 }
-#meet-our-team .img-content .member-content .social-icon {
+#meet-our-team .card .intro p {
+  text-align: center;
+  color: #ebebeb;
+  line-height: 0.8;
+}
+#meet-our-team .card .intro .social-icons {
+  padding-top: 15px;
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
-  padding-top: 20px;
 }
-#meet-our-team .img-content .member-content .social-icon a {
-  display: block;
+#meet-our-team .card .intro .social-icons i {
   color: #fff;
-  text-decoration: none;
 }
-#meet-our-team .img-content .member-content .social-icon a:hover {
+#meet-our-team .card .intro .social-icons i:hover {
   color: #fcb941;
+}
+#meet-our-team .about-text {
+  width: 100%;
+  padding-top: 10px;
+}
+#meet-our-team .about-text h4 {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+#meet-our-team .about-text p {
+  text-align: center;
+  color: #999;
+}
+
+#customer-say {
+  background-color: #f9f9f9;
+  padding-top: 60px;
+}
+#customer-say h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #333;
+  font-weight: 500;
+}
+#customer-say p {
+  color: #c4c4c4;
+}
+#customer-say h4 {
+  color: #333;
+  font-size: 18px;
+  line-height: 0;
+}
+#customer-say h5 {
+  font-weight: 400;
+  color: #a4a4a4;
+  font-size: 15px;
 }/*# sourceMappingURL=about.css.map */
