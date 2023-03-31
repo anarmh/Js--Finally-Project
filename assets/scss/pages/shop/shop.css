@@ -504,4 +504,117 @@
   color: #fcb941;
   margin-top: 10px;
   font-size: 20px;
+}
+
+#shop {
+  padding-top: 30px;
+}
+#shop aside .filter {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#shop aside .filter .text span {
+  color: #757575;
+  font-weight: 500;
+}
+#shop aside .filter .link a {
+  text-decoration: none;
+  color: #fcb941;
+}
+#shop aside .accordion .accordion-header .accordion-button {
+  font-weight: 400;
+  padding: 20px 0;
+  font-size: 20px;
+  color: #333;
+}
+#shop aside .accordion .accordion-header .accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+#shop aside .accordion .accordion-body {
+  padding: 0;
+  margin: 0;
+}
+#shop aside .accordion .accordion-body .item {
+  display: flex;
+  justify-content: space-between;
+}
+#shop aside .accordion .accordion-body .item a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #5a5d75;
+}
+#shop aside .accordion .accordion-body .item a:hover {
+  color: #fcb941;
+}
+#shop aside .accordion .accordion-body .item .span {
+  background-color: #f8f8f8;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop aside .accordion .accordion-body .item .span span {
+  color: #a5a69c;
+  font-size: 15px;
+}
+#shop aside .accordion .accordion-body .size label {
+  color: #818181;
+  font-weight: 500;
+  cursor: pointer;
+}
+#shop aside .accordion .accordion-body .size input:checked {
+  font-size: 15px;
+}
+#shop aside .accordion .accordion-body .colors {
+  display: flex;
+  padding: 20px 0;
+  gap: 5px;
+}
+#shop aside .accordion .accordion-body .colors .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #333;
+  cursor: pointer;
+}
+#shop aside .accordion .accordion-body .colors .brown {
+  background-color: rgb(204, 153, 102);
+}
+#shop aside .accordion .accordion-body .colors .blue {
+  background-color: rgb(51, 153, 204);
+}
+#shop aside .accordion .accordion-body .colors .violet {
+  background-color: rgb(153, 102, 204);
+}
+#shop aside .accordion .accordion-body .colors .black {
+  background-color: rgb(51, 51, 51);
+}
+#shop aside .accordion .accordion-body .colors .green {
+  background-color: rgb(102, 153, 51);
+}
+#shop aside .accordion .accordion-body .colors .red {
+  background-color: rgb(204, 51, 51);
+}
+#shop aside .accordion .accordion-body .colors .gray {
+  background-color: rgb(153, 153, 153);
+}
+#shop aside .accordion .accordion-body .brands .brand label {
+  color: #333;
+  cursor: pointer;
+  font-weight: 400;
+}
+#shop aside .accordion .accordion-body .price .price-range {
+  display: flex;
+  justify-content: space-between;
+}
+#shop aside .accordion .accordion-body .price .price-range .money {
+  color: #fcb941;
+}
+#shop aside .accordion .accordion-body .price .price-range .range-filter a {
+  text-decoration: none;
+  color: #fcb941;
 }/*# sourceMappingURL=shop.css.map */
