@@ -39,6 +39,15 @@ else{
 
 }
 
+
+let basket=[];
+
+if(JSON.parse(localStorage.getItem("basket"))!=null){
+  basket=JSON.parse(localStorage.getItem("basket"));
+}
+
+getBasketCount(basket)
+
 function getWishlistCount(arr){
 
     let count=0;
@@ -48,6 +57,16 @@ function getWishlistCount(arr){
 
     document.querySelector("#up-navbar .wislist-sup span").innerText=count;
 }
+
+
+function getBasketCount(arr) {
+    let count = 0;
+  
+    for (const item of arr) {
+      count += item.count;
+    }
+    document.querySelector("#up-navbar .cart-sup span").innerText = count;
+  }
 getWishlistCount(wishlist)
 
 function removeProduct(){
@@ -67,5 +86,6 @@ function removeProduct(){
   
       })
     })
+
 
 }

@@ -24,56 +24,48 @@ if (products != null) {
         <td><i class="fa-solid fa-xmark delete-item"></i></td>
       </tr> `;
   });
-  removeProduct()
-  IncreaseAndDecreasePriceCount()
+  removeProduct();
+  IncreaseAndDecreasePriceCount();
+} else {
+  tableBody.parentNode.classList.add("d-none");
+  tableBody.parentNode.nextElementSibling.classList.add("d-none");
+  tableBody.closest(".closest").nextElementSibling.classList.add("d-none");
+  tableBody
+    .closest(".closest")
+    .closest(".container")
+    .previousElementSibling.classList.remove("d-none");
 }
-else{
 
-    tableBody.parentNode.classList.add("d-none");
-    tableBody.parentNode.nextElementSibling.classList.add("d-none")
-    tableBody.closest(".closest").nextElementSibling.classList.add("d-none");
-    tableBody.closest(".closest").closest(".container").previousElementSibling.classList.remove("d-none")
-}
-
-function getBasketCount(arr){
-
-  let count=0
+function getBasketCount(arr) {
+  let count = 0;
 
   for (const item of arr) {
-    count+=item.count;
-    
+    count += item.count;
   }
-  document.querySelector("#up-navbar .cart-sup span").innerText=count;
+  document.querySelector("#up-navbar .cart-sup span").innerText = count;
 }
-getBasketCount(products)
+getBasketCount(products);
 
-function removeProduct(){
+function removeProduct() {
+  let productsDelete = document.querySelectorAll(".delete-item");
 
-  let productsDelete=document.querySelectorAll(".delete-item")
-  
-  productsDelete.forEach(btn=> {
-    btn.addEventListener("click",function(){
-      let deleteItem=this.closest("tr");
-      let deleteItemId=deleteItem.getAttribute("data-id");
+  productsDelete.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      let deleteItem = this.closest("tr");
+      let deleteItemId = deleteItem.getAttribute("data-id");
       deleteItem.remove();
-      let itemStorageId=products.findIndex((el)=>el.id==deleteItemId);
-      products.splice(itemStorageId,1);
+      let itemStorageId = products.findIndex((el) => el.id == deleteItemId);
+      products.splice(itemStorageId, 1);
       localStorage.setItem("basket", JSON.stringify(products));
       getBasketCount(products);
-      GetAllPrice()
-
-    })
+      GetAllPrice();
+    });
   });
-
- 
 }
 
-
-function GetAllPrice(){
-
-  let result=JSON.parse(localStorage.getItem("basket"))
-  if(result!=null){
-
+function GetAllPrice() {
+  let result = JSON.parse(localStorage.getItem("basket"));
+  if (result != null) {
     for (let i = 0; i < result.length; i++) {
       let product = result[i];
       let totalResult = document.querySelectorAll(".total-result")[i];
@@ -81,22 +73,17 @@ function GetAllPrice(){
       totalResult.innerText = total.toFixed(2);
     }
 
-    let sum=0
+    let sum = 0;
 
     for (const item of result) {
-      sum+=item.price * item.count;
+      sum += item.price * item.count;
     }
     document.querySelector(".all-total").innerText = sum.toFixed(2);
   }
 }
-GetAllPrice()
+GetAllPrice();
 
-
-
-
-  
-function IncreaseAndDecreasePriceCount(){
-
+function IncreaseAndDecreasePriceCount() {
   let inputNumbers = document.querySelectorAll("input[type=number]");
 
   inputNumbers.forEach((input) => {
@@ -110,7 +97,6 @@ function IncreaseAndDecreasePriceCount(){
       GetAllPrice();
     });
   });
-
 
   let minusButtons = document.querySelectorAll(".prev");
   let plusButtons = document.querySelectorAll(".next");
@@ -131,7 +117,6 @@ function IncreaseAndDecreasePriceCount(){
     });
   });
 
-
   plusButtons.forEach((button) => {
     button.addEventListener("click", function () {
       let inputNumber = this.previousElementSibling;
@@ -146,5 +131,19 @@ function IncreaseAndDecreasePriceCount(){
     });
   });
 
+  let basketWishlist = JSON.parse(localStorage.getItem("basketWishlist"));
 
+  if (basketWishlist != null) {
+    getWishlistCount(basketWishlist);
+  }
+
+  function getWishlistCount(arr) {
+    let count = 0;
+
+    for (const item of arr) {
+      count += item.count;
+    }
+
+    document.querySelector("#up-navbar .wislist-sup span").innerText = count;
+  }
 }
