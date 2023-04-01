@@ -160,11 +160,21 @@
                 .img{
 
                     .social-icons{
-                        padding-top: 20px;
+                        padding-top: 40px;
                         display: flex;
                         justify-content: space-around;
+                        .icon{
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #aaaaaa;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 100%;
+                        }
                         i{
                             display: block;
+                            color: #aaaaaa;
                         }
                     }
                     .header{
@@ -177,10 +187,12 @@
                         }
                         .right{
                         width: 50%;
+                        border-bottom: 2px solid #efefef;
                         }
                         p{
                             text-align: center;
                             font-weight: 500;
+                            
                         }
                     }
 
@@ -208,6 +220,13 @@
                         padding-top: 20px;
                         display: flex;
                         justify-content: space-between;
+                        border-bottom: 1px solid #aaaaaa ;
+                        p{
+                            color: #aaaaaa;
+                        }
+                        i{
+                            color: #aaaaaa;
+                        }
                     }
                     .btn{
                         display: none;

@@ -96,12 +96,22 @@
   justify-content: space-between;
 }
 #up-navbar .down .down-nav .img .social-icons {
-  padding-top: 20px;
+  padding-top: 40px;
   display: flex;
   justify-content: space-around;
 }
+#up-navbar .down .down-nav .img .social-icons .icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #aaaaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
 #up-navbar .down .down-nav .img .social-icons i {
   display: block;
+  color: #aaaaaa;
 }
 #up-navbar .down .down-nav .img .header {
   display: flex;
@@ -114,6 +124,7 @@
 }
 #up-navbar .down .down-nav .img .header .right {
   width: 50%;
+  border-bottom: 2px solid #efefef;
 }
 #up-navbar .down .down-nav .img .header p {
   text-align: center;
@@ -139,6 +150,13 @@
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #aaaaaa;
+}
+#up-navbar .down .down-nav .img .body p {
+  color: #aaaaaa;
+}
+#up-navbar .down .down-nav .img .body i {
+  color: #aaaaaa;
 }
 #up-navbar .down .down-nav .img .btn {
   display: none;
@@ -589,17 +607,16 @@
   background-image: url("../../../img/banner-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120px;
+  height: 30%;
 }
 #slide-banner .banners .banner .content {
   position: relative;
-  left: 20px;
-  top: 20px;
+  left: 10%;
+  top: 10%;
 }
 #slide-banner .banners .banner .content h4 {
   font-weight: 300;
   font-size: 15px;
-  line-height: 0.6;
 }
 #slide-banner .banners .banner .content h4 a {
   text-decoration: none;
@@ -637,17 +654,16 @@
   background-image: url("../../../img/banner-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120px;
+  height: 30%;
 }
 #slide-banner .banners .banner2 .content {
   position: relative;
-  left: 20px;
-  top: 20px;
+  left: 10%;
+  top: 10%;
 }
 #slide-banner .banners .banner2 .content h4 {
   font-weight: 300;
   font-size: 15px;
-  line-height: 0.6;
 }
 #slide-banner .banners .banner2 .content h4 a {
   text-decoration: none;
@@ -685,17 +701,16 @@
   background-image: url("../../../img/banner-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120px;
+  height: 30%;
 }
 #slide-banner .banners .banner3 .content {
   position: relative;
-  left: 20px;
-  top: 20px;
+  left: 10%;
+  top: 10%;
 }
 #slide-banner .banners .banner3 .content h4 {
   font-weight: 300;
   font-size: 15px;
-  line-height: 0.6;
 }
 #slide-banner .banners .banner3 .content h4 a {
   text-decoration: none;
