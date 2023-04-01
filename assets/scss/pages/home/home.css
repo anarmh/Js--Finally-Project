@@ -469,6 +469,54 @@
 #slide-banner {
   margin-top: 20px;
 }
+#slide-banner .slider .carousel-item {
+  position: relative;
+}
+#slide-banner .slider .carousel-item .content {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+#slide-banner .slider .carousel-item .content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fcbb4b;
+  padding-bottom: 10px;
+}
+#slide-banner .slider .carousel-item .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+#slide-banner .slider .carousel-item .content .price {
+  padding-bottom: 20px;
+}
+#slide-banner .slider .carousel-item .content .price .price-text {
+  text-decoration: line-through;
+  font-size: 25px;
+}
+#slide-banner .slider .carousel-item .content .price .today {
+  font-size: 25px;
+}
+#slide-banner .slider .carousel-item .content .price .text {
+  font-size: 40px;
+  color: #fcbb4b;
+  font-weight: 700;
+}
+#slide-banner .slider .carousel-item .content a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fcbb4b;
+  border-radius: 20px;
+}
+#slide-banner .slider .carousel-item .content a:hover {
+  background-color: #c59239;
+}
+#slide-banner .slider .carousel-item .content a i {
+  padding-left: 10px;
+  font-size: 12px;
+}
 #slide-banner .slider .icon {
   background-color: #777;
 }
