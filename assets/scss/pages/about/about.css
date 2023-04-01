@@ -23,6 +23,13 @@
   #down-navbar {
     display: none !important;
   }
+  #up-navbar .img .btn {
+    display: inline-block !important;
+  }
+  #up-navbar .img .btn i {
+    color: #fff;
+    font-size: 25px;
+  }
 }
 #up-navbar {
   background-color: #333333;
@@ -87,6 +94,13 @@
 #up-navbar .down .down-nav {
   display: flex;
   justify-content: space-between;
+}
+#up-navbar .down .down-nav .img .btn {
+  display: none;
+}
+#up-navbar .down .down-nav .img .btn i {
+  color: #fff;
+  font-size: 25px;
 }
 #up-navbar .down .down-nav .img a {
   text-decoration: none;

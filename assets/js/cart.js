@@ -16,7 +16,7 @@ if (products != null) {
         <td>
             <div class="input">
                 <div class=" icon prev "><i class="fa-solid fa-minus"></i></div>
-                <input type="number" ${product.count} value="1">
+                <input type="number" value="${product.count}">
                 <div class="icon next"><i class="fa-solid fa-plus"></i></div>
             </div>
         </td>

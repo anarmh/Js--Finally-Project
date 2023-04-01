@@ -47,6 +47,18 @@
     #down-navbar{
         display: none !important;
     }
+    #up-navbar{
+
+        .img{
+            .btn{
+                display: inline-block !important;
+                i{
+                    color: #fff;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
 }
 
 // X-Large devices (large desktops, less than 1400px)
@@ -146,6 +158,13 @@
             display: flex;
             justify-content: space-between;
                 .img{
+                    .btn{
+                        display: none;
+                        i{
+                            color: #fff;
+                            font-size: 25px;
+                        }
+                    }
                     a{
                         text-decoration: none;
                     }
