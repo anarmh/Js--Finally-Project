@@ -617,4 +617,85 @@
 #shop aside .accordion .accordion-body .price .price-range .range-filter a {
   text-decoration: none;
   color: #fcb941;
+}
+#shop .header {
+  display: flex;
+  justify-content: space-between;
+}
+#shop .header .left p {
+  color: #d1cece;
+}
+#shop .header .left p span {
+  color: #333;
+}
+#shop .header .right span {
+  padding-right: 10px;
+}
+#shop .header .right select {
+  color: #d1cece;
+  border: 1px solid #d1cece;
+}
+#shop .header .right svg {
+  cursor: pointer;
+}
+#shop .products .img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+#shop .products .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shop .products .img span {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #7dd2ea;
+}
+#shop .products .product .gender {
+  margin-top: 10px;
+}
+#shop .products .product .gender a {
+  text-decoration: none;
+  color: #777;
+}
+#shop .products .product .gender a:hover {
+  color: #fcb941;
+}
+#shop .products .product h3 {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+#shop .products .product p {
+  line-height: 0.3;
+  color: #777;
+}
+#shop .products .product .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+#shop .products .product .black {
+  background-color: rgb(51, 51, 51);
+}
+#shop .products .product .blue {
+  background-color: rgb(51, 153, 204);
+}
+#shop .products .product .green {
+  background-color: rgb(102, 153, 51);
+}
+#shop .products .product .red {
+  background-color: rgb(204, 51, 51);
 }/*# sourceMappingURL=shop.css.map */
