@@ -95,6 +95,40 @@
   display: flex;
   justify-content: space-between;
 }
+#up-navbar .down .down-nav .img .header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+#up-navbar .down .down-nav .img .header .left {
+  width: 50%;
+}
+#up-navbar .down .down-nav .img .header .right {
+  width: 50%;
+}
+#up-navbar .down .down-nav .img .header p {
+  text-align: center;
+}
+#up-navbar .down .down-nav .img form input {
+  width: 80%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #fcb941;
+  padding-left: 10px;
+}
+#up-navbar .down .down-nav .img form a {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #fcb941;
+  color: #fff;
+}
+#up-navbar .down .down-nav .img form a i {
+  rotate: 90deg;
+}
+#up-navbar .down .down-nav .img .body {
+  display: flex;
+  justify-content: space-between;
+}
 #up-navbar .down .down-nav .img .btn {
   display: none;
 }

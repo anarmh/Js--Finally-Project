@@ -158,6 +158,47 @@
             display: flex;
             justify-content: space-between;
                 .img{
+                    .header{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 20px;
+                        .left{
+
+                            width: 50%;
+                        }
+                        .right{
+                        width: 50%;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                    }
+
+                    form{
+
+                        input{
+                            width: 80%;
+                            height: 40px;
+                           outline: none;
+                           border: 1px solid #fcb941;
+                           padding-left: 10px;
+                        }
+                        a{
+                            text-decoration: none;
+                            padding: 10px 15px;
+                            background-color: #fcb941;
+                            color: #fff;
+                            i{
+                                rotate: 90deg;
+                            }
+                        }
+                    }
+
+                    .body{
+
+                        display: flex;
+                        justify-content: space-between;
+                    }
                     .btn{
                         display: none;
                         i{
